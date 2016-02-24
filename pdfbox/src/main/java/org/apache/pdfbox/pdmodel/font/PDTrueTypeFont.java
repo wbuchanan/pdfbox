@@ -23,8 +23,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.fontbox.FontBoxFont;
 import org.apache.fontbox.ttf.CmapSubtable;
 import org.apache.fontbox.ttf.CmapTable;
@@ -56,7 +54,7 @@ import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;
  */
 public class PDTrueTypeFont extends PDSimpleFont implements PDVectorFont
 {
-    private static final Log LOG = LogFactory.getLog(PDTrueTypeFont.class);
+    // private static final Log LOG = LogFactory.getLog(PDTrueTypeFont.class);
 
     private static final int START_RANGE_F000 = 0xF000;
     private static final int START_RANGE_F100 = 0xF100;
@@ -179,12 +177,12 @@ public class PDTrueTypeFont extends PDSimpleFont implements PDVectorFont
                 }
                 catch (NullPointerException e) // TTF parser is buggy
                 {
-                    LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
                     fontIsDamaged = true;
                 }
                 catch (IOException e)
                 {
-                    LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
                     fontIsDamaged = true;
                 }
             }
@@ -202,7 +200,7 @@ public class PDTrueTypeFont extends PDSimpleFont implements PDVectorFont
 
             if (mapping.isFallback())
             {
-                LOG.warn("Using fallback font '" + ttfFont + "' for '" + getBaseFont() + "'");
+                //LOG.warn("Using fallback font '" + ttfFont + "' for '" + getBaseFont() + "'");
             }
         }
         ttf = ttfFont;

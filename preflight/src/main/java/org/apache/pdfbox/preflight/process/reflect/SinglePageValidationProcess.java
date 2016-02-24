@@ -21,30 +21,12 @@
 
 package org.apache.pdfbox.preflight.process.reflect;
 
-import static org.apache.pdfbox.preflight.PreflightConfiguration.ACTIONS_PROCESS;
-import static org.apache.pdfbox.preflight.PreflightConfiguration.ANNOTATIONS_PROCESS;
-import static org.apache.pdfbox.preflight.PreflightConfiguration.GRAPHIC_PROCESS;
-import static org.apache.pdfbox.preflight.PreflightConfiguration.RESOURCES_PROCESS;
-import static org.apache.pdfbox.preflight.PreflightConstants.ERROR_GRAPHIC_INVALID;
-import static org.apache.pdfbox.preflight.PreflightConstants.ERROR_GRAPHIC_TRANSPARENCY_GROUP;
-import static org.apache.pdfbox.preflight.PreflightConstants.ERROR_UNKOWN_ERROR;
-import static org.apache.pdfbox.preflight.PreflightConstants.PAGE_DICTIONARY_VALUE_THUMB;
-import static org.apache.pdfbox.preflight.PreflightConstants.XOBJECT_DICTIONARY_KEY_GROUP;
-import static org.apache.pdfbox.preflight.PreflightConstants.XOBJECT_DICTIONARY_VALUE_S_TRANSPARENCY;
-
-import java.io.IOException;
-import java.util.List;
-
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSObject;
-import org.apache.pdfbox.cos.COSStream;
+import org.apache.pdfbox.cos.*;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDResources;
+import org.apache.pdfbox.pdmodel.graphics.PDXObject;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
-import org.apache.pdfbox.pdmodel.graphics.PDXObject;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
 import org.apache.pdfbox.preflight.PreflightConfiguration;
 import org.apache.pdfbox.preflight.PreflightConstants;
@@ -59,6 +41,12 @@ import org.apache.pdfbox.preflight.graphic.ColorSpaceHelperFactory.ColorSpaceRes
 import org.apache.pdfbox.preflight.process.AbstractProcess;
 import org.apache.pdfbox.preflight.utils.COSUtils;
 import org.apache.pdfbox.preflight.utils.ContextHelper;
+
+import java.io.IOException;
+import java.util.List;
+
+import static org.apache.pdfbox.preflight.PreflightConfiguration.*;
+import static org.apache.pdfbox.preflight.PreflightConstants.*;
 
 public class SinglePageValidationProcess extends AbstractProcess
 {
@@ -128,7 +116,8 @@ public class SinglePageValidationProcess extends AbstractProcess
                 catch (IOException e)
                 {
                     // fixme: this code was previously in PDResources
-                    // LOG.error("error while creating a colorspace", exception);
+                    // System.out.println("error while creating a colorspace"
+                    // + e.toString());
                 }
             }
         }

@@ -23,8 +23,6 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
@@ -39,7 +37,7 @@ import org.w3c.dom.Element;
  */
 public class FDFAnnotationPolyline extends FDFAnnotation
 {
-    private static final Log LOG = LogFactory.getLog(FDFAnnotationPolyline.class);
+    // private static final Log LOG = LogFactory.getLog(FDFAnnotationPolyline.class);
     /**
      * COS Model value for SubType entry.
      */
@@ -100,7 +98,7 @@ public class FDFAnnotationPolyline extends FDFAnnotation
         }
         catch (XPathExpressionException e)
         {
-            LOG.debug("Error while evaluating XPath expression for polyline vertices");
+            //LOG.debug("Error while evaluating XPath expression for polyline vertices");
         }
     }
 

@@ -47,10 +47,6 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcmail-jdk15on</artifactId>
             <optional>true</optional>
@@ -112,13 +108,11 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>-Xmx768m</argLine>
+                    <argLine>-Xmx1024m</argLine>
                     <excludes>
                         <exclude>org/apache/pdfbox/rendering/TestPDFToImage.java</exclude>
                     </excludes>
-                    <systemPropertyVariables>
-                        <java.util.logging.config.file>src/test/resources/logging.properties</java.util.logging.config.file>
-                    </systemPropertyVariables>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
             <plugin>
@@ -160,7 +154,6 @@
             	Publish Javadoc to Apache CMS
             	After completion log in to https://cms.apache.org/pdfbox/publish 
             	and click on the Submit button to commit to production.
-             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-publish-plugin</artifactId>
@@ -172,6 +165,7 @@
                     <serverId>pdfbox-site</serverId>
                 </configuration>
             </plugin>
+            -->
         </plugins>
     </build>
 

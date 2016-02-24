@@ -16,36 +16,23 @@
  */
 package org.apache.pdfbox.pdmodel.font;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import org.apache.fontbox.FontBoxFont;
+import org.apache.fontbox.cff.CFFCIDFont;
+import org.apache.fontbox.cff.CFFFont;
+import org.apache.fontbox.ttf.*;
+import org.apache.fontbox.ttf.TrueTypeCollection.TrueTypeFontProcessor;
+import org.apache.fontbox.type1.Type1Font;
+import org.apache.fontbox.util.autodetect.FontFileFinder;
+import org.apache.pdfbox.io.IOUtils;
+import org.apache.pdfbox.util.Charsets;
+
+import java.io.*;
 import java.net.URI;
 import java.security.AccessControlException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.fontbox.FontBoxFont;
-import org.apache.fontbox.cff.CFFCIDFont;
-import org.apache.fontbox.cff.CFFFont;
-import org.apache.fontbox.ttf.NamingTable;
-import org.apache.fontbox.ttf.OTFParser;
-import org.apache.fontbox.ttf.OpenTypeFont;
-import org.apache.fontbox.ttf.TTFParser;
-import org.apache.fontbox.ttf.TrueTypeCollection;
-import org.apache.fontbox.ttf.TrueTypeCollection.TrueTypeFontProcessor;
-import org.apache.fontbox.ttf.TrueTypeFont;
-import org.apache.fontbox.type1.Type1Font;
-import org.apache.fontbox.util.autodetect.FontFileFinder;
-import org.apache.pdfbox.io.IOUtils;
-import org.apache.pdfbox.util.Charsets;
 
 /**
  * A FontProvider which searches for fonts on the local filesystem.
@@ -54,7 +41,7 @@ import org.apache.pdfbox.util.Charsets;
  */
 final class FileSystemFontProvider extends FontProvider
 {
-    private static final Log LOG = LogFactory.getLog(FileSystemFontProvider.class);
+    // private static final Log LOG = LogFactory.getLog(FileSystemFontProvider.class);
     
     private final List<FSFontInfo> fontInfoList = new ArrayList<FSFontInfo>();
     private final FontCache cache;
@@ -194,10 +181,12 @@ final class FileSystemFontProvider extends FontProvider
         this.cache = cache;
         try
         {
+            /*
             if (LOG.isTraceEnabled())
             {
-                LOG.trace("Will search the local system for fonts");
+                //LOG.trace("Will search the local system for fonts");
             }
+            */
 
             // scan the local system for font files
             List<File> files = new ArrayList<File>();
@@ -208,10 +197,12 @@ final class FileSystemFontProvider extends FontProvider
                 files.add(new File(font));
             }
 
+            /*
             if (LOG.isTraceEnabled())
             {
-                LOG.trace("Found " + files.size() + " fonts on the local system");
+                // LOG.trace("Found " + files.size() + " fonts on the local system");
             }
+            */
 
             // load cached FontInfo objects
             List<FSFontInfo> cachedInfos = loadDiskCache(files);
@@ -221,16 +212,16 @@ final class FileSystemFontProvider extends FontProvider
             }
             else
             {
-                LOG.warn("Building on-disk font cache, this may take a while");
+                //LOG.warn("Building on-disk font cache, this may take a while");
                 scanFonts(files);
                 saveDiskCache();
-                LOG.warn("Finished building on-disk font cache, found " +
-                        fontInfoList.size() + " fonts");
+                //LOG.warn("Finished building on-disk font cache, found " +
+                //        fontInfoList.size() + " fonts");
             }
         }
         catch (AccessControlException e)
         {
-            LOG.error("Error accessing the file system", e);
+            System.out.println(e.toString());
         }
     }
     
@@ -257,7 +248,7 @@ final class FileSystemFontProvider extends FontProvider
             }
             catch (IOException e)
             {
-                LOG.error("Error parsing font " + file.getPath(), e);
+                System.out.println(e.toString());
             }
         }
     }
@@ -339,7 +330,7 @@ final class FileSystemFontProvider extends FontProvider
         }
         catch (IOException e)
         {
-            LOG.error("Could not write to font cache", e);
+            System.out.println(e.toString());
         }
         finally
         {
@@ -424,7 +415,7 @@ final class FileSystemFontProvider extends FontProvider
             }
             catch (IOException e)
             {
-                LOG.error("Error loading font cache, will be re-built", e);
+                System.out.println(e.toString());
                 return null;
             }
             finally
@@ -436,7 +427,7 @@ final class FileSystemFontProvider extends FontProvider
         if (pending.size() > 0)
         {
             // re-build the entire cache if we encounter un-cached fonts (could be optimised)
-            LOG.warn("New fonts found, font cache will be re-built");
+            //LOG.warn("New fonts found, font cache will be re-built");
             return null;
         }
         
@@ -463,11 +454,11 @@ final class FileSystemFontProvider extends FontProvider
         }
         catch (NullPointerException e) // TTF parser is buggy
         {
-            LOG.error("Could not load font file: " + ttcFile, e);
+            System.out.println(e.toString());
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + ttcFile, e);
+            System.out.println(e.toString());
         }
         finally
         {
@@ -500,11 +491,11 @@ final class FileSystemFontProvider extends FontProvider
         }
         catch (NullPointerException e) // TTF parser is buggy
         {
-            LOG.error("Could not load font file: " + ttfFile, e);
+            System.out.println(e.toString());
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + ttfFile, e);
+            System.out.println(e.toString());
         }
     }
 
@@ -579,7 +570,7 @@ final class FileSystemFontProvider extends FontProvider
                             usWeightClass, sFamilyClass, ulCodePageRange1, ulCodePageRange2,
                             macStyle, panose, this));
                 }
-
+                /*
                 if (LOG.isTraceEnabled())
                 {
                     NamingTable name = ttf.getNaming();
@@ -589,18 +580,18 @@ final class FileSystemFontProvider extends FontProvider
                                   name.getFontFamily() + "' / '" +
                                   name.getFontSubFamily() + "'");
                     }
-                }
+                } */
             }
             else
             {
                 fontInfoList.add(new FSIgnored(file, FontFormat.TTF, "*skipnoname*"));
-                LOG.warn("Missing 'name' entry for PostScript name in font " + file);
+                //LOG.warn("Missing 'name' entry for PostScript name in font " + file);
             }
         }
         catch (IOException e)
         {
             fontInfoList.add(new FSIgnored(file, FontFormat.TTF, "*skipexception*"));
-            LOG.error("Could not load font file: " + file, e);
+            System.out.println(e.toString());
         }
         finally
         {
@@ -622,16 +613,17 @@ final class FileSystemFontProvider extends FontProvider
             Type1Font type1 = Type1Font.createWithPFB(input);
             fontInfoList.add(new FSFontInfo(pfbFile, FontFormat.PFB, type1.getName(),
                                             null, -1, -1, 0, 0, -1, null, this));
-
+            /*
             if (LOG.isTraceEnabled())
             {
                 LOG.trace("PFB: '" + type1.getName() + "' / '" + type1.getFamilyName() + "' / '" +
                         type1.getWeight() + "'");
             }
+            */
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + pfbFile, e);
+            System.out.println(e.toString());
         }
         finally
         {
@@ -644,20 +636,21 @@ final class FileSystemFontProvider extends FontProvider
         try
         {
             TrueTypeFont ttf = readTrueTypeFont(postScriptName, file);
-
+            /*
             if (LOG.isDebugEnabled())
             {
-                LOG.debug("Loaded " + postScriptName + " from " + file);
+                //LOG.debug("Loaded " + postScriptName + " from " + file);
             }
+            */
             return ttf;
         }
         catch (NullPointerException e) // TTF parser is buggy
         {
-            LOG.error("Could not load font file: " + file, e);
+            System.out.println(e.toString());
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + file, e);
+            System.out.println(e.toString());
         }
         return null;
     }
@@ -689,16 +682,17 @@ final class FileSystemFontProvider extends FontProvider
             // todo JH: we don't yet support loading CFF fonts from OTC collections 
             OTFParser parser = new OTFParser(false, true);
             OpenTypeFont otf = parser.parse(file);
-
+            /*
             if (LOG.isDebugEnabled())
             {
-                LOG.debug("Loaded " + postScriptName + " from " + file);
+                //LOG.debug("Loaded " + postScriptName + " from " + file);
             }
+            */
             return otf;
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + file, e);
+            System.out.println(e.toString());
         }
         return null;
     }
@@ -710,16 +704,17 @@ final class FileSystemFontProvider extends FontProvider
         {
             input = new FileInputStream(file);
             Type1Font type1 = Type1Font.createWithPFB(input);
-
+            /*
             if (LOG.isDebugEnabled())
             {
-                LOG.debug("Loaded " + postScriptName + " from " + file);
+                //LOG.debug("Loaded " + postScriptName + " from " + file);
             }
+            */
             return type1;
         }
         catch (IOException e)
         {
-            LOG.error("Could not load font file: " + file, e);
+            System.out.println(e.toString());
         }
         finally
         {

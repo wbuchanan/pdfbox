@@ -16,20 +16,15 @@
  */
 package org.apache.pdfbox.pdmodel.graphics.shading;
 
-import java.awt.PaintContext;
-import java.awt.Rectangle;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.io.IOException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBoolean;
 import org.apache.pdfbox.pdmodel.common.function.PDFunction;
 import org.apache.pdfbox.util.Matrix;
+
+import java.awt.*;
+import java.awt.geom.*;
+import java.awt.image.*;
+import java.io.IOException;
 
 /**
  * AWT PaintContext for radial shading.
@@ -40,7 +35,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 public class RadialShadingContext extends ShadingContext implements PaintContext
 {
-    private static final Log LOG = LogFactory.getLog(RadialShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(RadialShadingContext.class);
 
     private PDShadingType3 radialShadingType;
 
@@ -118,7 +113,7 @@ public class RadialShadingContext extends ShadingContext implements PaintContext
         }
         catch (NoninvertibleTransformException ex)
         {
-            LOG.error(ex, ex);
+            System.out.println(ex.toString());
         }
 
         // shading space -> device space

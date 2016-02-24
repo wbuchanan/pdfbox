@@ -25,8 +25,6 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 import java.io.IOException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.util.Matrix;
 
 /**
@@ -35,7 +33,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 public class AxialShadingPaint implements Paint
 {
-    private static final Log LOG = LogFactory.getLog(AxialShadingPaint.class);
+    // private static final Log LOG = LogFactory.getLog(AxialShadingPaint.class);
 
     private final PDShadingType2 shading;
     private final Matrix matrix;
@@ -68,7 +66,7 @@ public class AxialShadingPaint implements Paint
         }
         catch (IOException e)
         {
-            LOG.error("An error occurred while painting", e);
+            System.out.println(e.toString());
             return new Color(0, 0, 0, 0).createContext(cm, deviceBounds, userBounds, xform, hints);
         }
     }

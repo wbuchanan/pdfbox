@@ -22,8 +22,6 @@ import java.awt.image.ColorModel;
 import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.io.IOException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
@@ -37,7 +35,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 public abstract class ShadingContext
 {
-    private static final Log LOG = LogFactory.getLog(ShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(ShadingContext.class);
 
     protected PDRectangle bboxRect;
     protected float minBBoxX, minBBoxY, maxBBoxX, maxBBoxY;
@@ -122,7 +120,7 @@ public abstract class ShadingContext
         maxBBoxY = Math.max(bboxTab[1], bboxTab[3]);
         if (minBBoxX >= maxBBoxX || minBBoxY >= maxBBoxY)
         {
-            LOG.warn("empty BBox is ignored");
+            //LOG.warn("empty BBox is ignored");
             bboxRect = null;
         }
     }

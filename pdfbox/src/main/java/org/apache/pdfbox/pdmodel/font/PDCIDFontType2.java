@@ -16,21 +16,9 @@
  */
 package org.apache.pdfbox.pdmodel.font;
 
-import java.awt.geom.GeneralPath;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.fontbox.cff.Type2CharString;
 import org.apache.fontbox.cmap.CMap;
-import org.apache.fontbox.ttf.CmapSubtable;
-import org.apache.fontbox.ttf.GlyphData;
-import org.apache.fontbox.ttf.OTFParser;
-import org.apache.fontbox.ttf.OpenTypeFont;
-import org.apache.fontbox.ttf.TTFParser;
-import org.apache.fontbox.ttf.TrueTypeFont;
+import org.apache.fontbox.ttf.*;
 import org.apache.fontbox.util.BoundingBox;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
@@ -41,6 +29,12 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.common.PDStream;
 import org.apache.pdfbox.util.Matrix;
 
+import java.awt.geom.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Type 2 CIDFont (TrueType).
  * 
@@ -48,7 +42,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 public class PDCIDFontType2 extends PDCIDFont
 {
-    private static final Log LOG = LogFactory.getLog(PDCIDFontType2.class);
+    // private static final Log LOG = LogFactory.getLog(PDCIDFontType2.class);
 
     private final TrueTypeFont ttf;
     private final int[] cid2gid;
@@ -112,12 +106,12 @@ public class PDCIDFontType2 extends PDCIDFont
                 }
                 catch (NullPointerException e) // TTF parser is buggy
                 {
-                    LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
                     fontIsDamaged = true;
                 }
                 catch (IOException e)
                 {
-                    LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);
                     fontIsDamaged = true;
                 }
             }
@@ -139,19 +133,19 @@ public class PDCIDFontType2 extends PDCIDFont
     
                     if (otf.hasLayoutTables())
                     {
-                        LOG.error("OpenType Layout tables used in font " + getBaseFont() +
+                        System.out.println("OpenType Layout tables used in font " + getBaseFont() +
                                   " are not implemented in PDFBox and will be ignored");
                     }
                 }
                 catch (NullPointerException e) // TTF parser is buggy
                 {
                     fontIsDamaged = true;
-                    LOG.warn("Could not read embedded OTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded OTF for font " + getBaseFont(), e);
                 }
                 catch (IOException e)
                 {
                     fontIsDamaged = true;
-                    LOG.warn("Could not read embedded OTF for font " + getBaseFont(), e);
+                    //LOG.warn("Could not read embedded OTF for font " + getBaseFont(), e);
                 }
             }
             isEmbedded = ttfFont != null;
@@ -175,7 +169,7 @@ public class PDCIDFontType2 extends PDCIDFont
     
                 if (mapping.isFallback())
                 {
-                    LOG.warn("Using fallback font " + ttfFont.getName() + " for CID-keyed TrueType font " + getBaseFont());
+                    //LOG.warn("Using fallback font " + ttfFont.getName() + " for CID-keyed TrueType font " + getBaseFont());
                 }
             }
             ttf = ttfFont;
@@ -290,7 +284,7 @@ public class PDCIDFontType2 extends PDCIDFont
             if (cid2gid != null && !isDamaged)
             {
                 // Acrobat allows non-embedded GIDs - todo: can we find a test PDF for this?
-                LOG.warn("Using non-embedded GIDs in font " + getName());
+                //LOG.warn("Using non-embedded GIDs in font " + getName());
                 int cid = codeToCID(code);
                 return cid2gid[cid];
             }
@@ -300,14 +294,14 @@ public class PDCIDFontType2 extends PDCIDFont
                 String unicode = parent.toUnicode(code);
                 if (unicode == null)
                 {
-                    LOG.warn("Failed to find a character mapping for " + code + " in " + getName());
+                    //LOG.warn("Failed to find a character mapping for " + code + " in " + getName());
                     // Acrobat is willing to use the CID as a GID, even when the font isn't embedded
                     // see PDFBOX-2599
                     return codeToCID(code);
                 }
                 else if (unicode.length() > 1)
                 {
-                    LOG.warn("Trying to map multi-byte character using 'cmap', result will be poor");
+                    //LOG.warn("Trying to map multi-byte character using 'cmap', result will be poor");
                 }
                 
                 // a non-embedded font always has a cmap (otherwise FontMapper won't load it)

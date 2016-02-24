@@ -26,8 +26,6 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 import java.io.IOException;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.util.Matrix;
 
 /**
@@ -36,7 +34,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 public class RadialShadingPaint implements Paint
 {
-    private static final Log LOG = LogFactory.getLog(RadialShadingPaint.class);
+    // private static final Log LOG = LogFactory.getLog(RadialShadingPaint.class);
 
     private final PDShadingType3 shading;
     private final Matrix matrix;
@@ -69,7 +67,7 @@ public class RadialShadingPaint implements Paint
         }
         catch (IOException e)
         {
-            LOG.error("An error occurred while painting", e);
+            System.out.println(e.toString());
             return new Color(0, 0, 0, 0).createContext(cm, deviceBounds, userBounds, xform, hints);
         }
     }

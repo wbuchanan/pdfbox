@@ -16,17 +16,11 @@
 
 package org.apache.pdfbox.tools.imageio;
 
+import javax.imageio.metadata.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.*;
+import javax.xml.transform.stream.*;
 import java.io.StringWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  *
@@ -34,7 +28,6 @@ import org.apache.commons.logging.LogFactory;
  */
 public final class MetaUtil
 {
-    private static final Log LOG = LogFactory.getLog(MetaUtil.class);
 
     static final String SUN_TIFF_FORMAT = "com_sun_media_imageio_plugins_tiff_image_1.0";
     static final String JPEG_NATIVE_FORMAT = "javax_imageio_jpeg_image_1.0";
@@ -47,10 +40,6 @@ public final class MetaUtil
     // logs metadata as an XML tree if debug is enabled
     static void debugLogMetadata(IIOMetadata metadata, String format)
     {
-        if (!LOG.isDebugEnabled())
-        {
-            return;
-        }
 
         // see http://docs.oracle.com/javase/7/docs/api/javax/imageio/
         //     metadata/doc-files/standard_metadata.html
@@ -65,15 +54,14 @@ public final class MetaUtil
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
             DOMSource domSource = new DOMSource(root);
             transformer.transform(domSource, streamResult);
-            LOG.debug("\n" + xmlStringWriter);
         }
         catch (IllegalArgumentException ex)
         {
-            LOG.error(ex, ex);
+            System.out.println(ex.toString());
         }
         catch (TransformerException ex)
         {
-            LOG.error(ex, ex);
+            System.out.println(ex.toString());
         }
     }
 

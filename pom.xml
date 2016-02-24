@@ -57,6 +57,7 @@
   </modules>
 
   <build>
+	  <defaultGoal>package</defaultGoal>
     <plugins>
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
@@ -64,7 +65,10 @@
           <skip>true</skip>
         </configuration>
       </plugin>
-    </plugins>
+
+	</plugins>
+
+
   </build>
 
   <profiles>
@@ -130,7 +134,8 @@
                       </fileset>
                     </checksum>
                     <checksum file="${basedir}/target/${project.version}/pdfbox-${project.version}-src.zip" algorithm="SHA1" property="checksum" />
-                    <echo file="${basedir}/target/vote.txt">
+                    <!--
+					  <echo file="${basedir}/target/vote.txt">
 From: ${username}@apache.org
 To: dev@pdfbox.apache.org
 Subject: [VOTE] Release Apache PDFBox ${project.version}
@@ -166,6 +171,7 @@ A release vote template has been generated for you:
 
     file://${basedir}/target/vote.txt
                     </echo>
+                    -->
                     <echo />
                   </tasks>
                 </configuration>
@@ -183,5 +189,6 @@ A release vote template has been generated for you:
       </build>
     </profile>
   </profiles>
+
 
 </project>

@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4853f51e-dbf9-4ee3-bcd0-2933d28e6669" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/billy.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_jpeg2000_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_java_diff_utils_diffutils_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_levigo_jbig2_levigo_jbig2_imageio_1_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wink_wink_component_test_support_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk15on_1_54.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_54.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_54.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfbox-app.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debugger-app/debugger-app.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debugger/pdfbox-debugger.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pdfbox-examples.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontbox/fontbox.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parent/pdfbox-parent.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdfbox-reactor.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdfbox/pdfbox.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preflight-app/preflight-app.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preflight/preflight.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/pdfbox-tools.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmpbox/xmpbox.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/pdfbox/examples/signature/TSAClient.java" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/pdfbox/examples/signature/TSAClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/pom.xml" afterPath="$PROJECT_DIR$/fontbox/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharString.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharStringParser.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharStringParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/CmapSubtable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/CmapSubtable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfCompositeDescript.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfCompositeDescript.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfSimpleDescript.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfSimpleDescript.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyphRenderer.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyphRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningSubtable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningSubtable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningTable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/type1/Type1Lexer.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/type1/Type1Lexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parent/pom.xml" afterPath="$PROJECT_DIR$/parent/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/pom.xml" afterPath="$PROJECT_DIR$/pdfbox/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClosePath.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClosePath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveTo.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveTo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LineTo.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LineTo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineDashPattern.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineDashPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveText.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSStream.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSString.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/ASCIIHexFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/ASCIIHexFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/DCTFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/DCTFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/Filter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/Filter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/FlateFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/FlateFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/LZWFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/LZWFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/RunLengthDecodeFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/RunLengthDecodeFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/StandardStructureTypes.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/StandardStructureTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingPaint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/CIDType0Glyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/CIDType0Glyph2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/PageDrawer.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/PageDrawer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/Type1Glyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/Type1Glyph2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStreamEngine.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStreamEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/encryption/TestSymmetricKeyEncryption.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/encryption/TestSymmetricKeyEncryption.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/pom.xml" afterPath="$PROJECT_DIR$/preflight/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/process/reflect/SinglePageValidationProcess.java" afterPath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/process/reflect/SinglePageValidationProcess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/utils/COSUtils.java" afterPath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/utils/COSUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/AbstractInvalidFileTester.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/AbstractInvalidFileTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestInvalidFiles.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestInvalidFiles.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestIsartorValidation.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestIsartorValidation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestValidFiles.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestValidFiles.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/pom.xml" afterPath="$PROJECT_DIR$/tools/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/OverlayPDF.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/OverlayPDF.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/ImageIOUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/ImageIOUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/MetaUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/MetaUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/TIFFUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/TIFFUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/org/apache/pdfbox/tools/imageio/TestImageIOUtils.java" afterPath="$PROJECT_DIR$/tools/src/test/java/org/apache/pdfbox/tools/imageio/TestImageIOUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmpbox/pom.xml" afterPath="$PROJECT_DIR$/xmpbox/pom.xml" />
+    </list>
+    <ignored path="pdfbox-reactor.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/app/target/" />
+    <ignored path="$PROJECT_DIR$/debugger/target/" />
+    <ignored path="$PROJECT_DIR$/preflight-app/target/" />
+    <ignored path="$PROJECT_DIR$/tools/target/" />
+    <ignored path="$PROJECT_DIR$/fontbox/target/" />
+    <ignored path="$PROJECT_DIR$/debugger-app/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/xmpbox/target/" />
+    <ignored path="$PROJECT_DIR$/pdfbox/target/" />
+    <ignored path="$PROJECT_DIR$/preflight/target/" />
+    <ignored path="$PROJECT_DIR$/examples/target/" />
+    <ignored path="$PROJECT_DIR$/parent/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CodeExplorer">
+    <option name="filters">
+      <list>
+        <LibraryFilter />
+      </list>
+    </option>
+    <option name="showMethodBody" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="CodeIris Favorites" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.205298">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/CIDType0Glyph2D.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/Type1Glyph2D.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStreamEngine.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java" />
+        <option value="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java" />
+        <option value="$PROJECT_DIR$/pdfbox/pom.xml" />
+        <option value="$PROJECT_DIR$/fontbox/pom.xml" />
+        <option value="$PROJECT_DIR$/preflight/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="pluginUpdatePolicy" value="UPDATE" />
+        <option name="printErrorStackTraces" value="true" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8 (1)" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="137" />
+    <option name="y" value="204" />
+    <option name="width" value="1649" />
+    <option name="height" value="620" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdfbox-reactor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdfbox-reactor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdfbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.rmicompiler" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="eslint" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="loggingSearch" text="import org.apache.commons.logging.Log;&#10;import org.apache.commons.logging.LogFactory;&#10;" recursive="true" caseInsensitive="true" type="JAVA">
+      <constraint name="__context__" target="true" within="" contains="" />
+    </searchConfiguration>
+    <searchConfiguration name="user defined" created="1456309099445" text="import org.apache.commons.logging.Log;&#10;import org.apache.commons.logging.LogFactory;&#10;" recursive="true" caseInsensitive="true" type="JAVA" history="1" />
+    <searchConfiguration name="user defined" created="1456309048514" text="import org.apache.commons.logging.Log;" recursive="true" caseInsensitive="true" type="JAVA" history="1" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4853f51e-dbf9-4ee3-bcd0-2933d28e6669" name="Default" comment="" />
+      <created>1456307619977</created>
+      <option name="number" value="Default" />
+      <updated>1456307619977</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="137" y="204" width="1649" height="620" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.50331676" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.49668324" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495333" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276515" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
+      <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495333" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276515" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="511" column="38" selection-start-line="511" selection-start-column="38" selection-end-line="511" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="11" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.925926">
+          <caret line="1968" column="20" selection-start-line="1968" selection-start-column="20" selection-end-line="1968" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="15" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="546" column="16" selection-start-line="546" selection-start-column="16" selection-end-line="546" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="420" column="27" selection-start-line="420" selection-start-column="27" selection-end-line="420" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="310" column="26" selection-start-line="310" selection-start-column="26" selection-end-line="310" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="222" column="30" selection-start-line="222" selection-start-column="30" selection-end-line="222" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="668" column="18" selection-start-line="668" selection-start-column="18" selection-end-line="668" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="404" column="14" selection-start-line="404" selection-start-column="14" selection-end-line="404" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="250" column="22" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="18" selection-start-line="249" selection-start-column="18" selection-end-line="249" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="226" column="18" selection-start-line="226" selection-start-column="18" selection-end-line="226" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="435" column="18" selection-start-line="435" selection-start-column="18" selection-end-line="435" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1171" column="18" selection-start-line="1171" selection-start-column="18" selection-end-line="1171" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="398" column="19" selection-start-line="398" selection-start-column="19" selection-end-line="398" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="587" column="18" selection-start-line="587" selection-start-column="18" selection-end-line="587" selection-end-column="18" />
+          <folding>
+            <element signature="e#5863#5869#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="320" column="22" selection-start-line="320" selection-start-column="22" selection-end-line="320" selection-end-column="22" />
+          <folding>
+            <element signature="e#10294#10295#0" expanded="false" />
+            <element signature="e#10322#10323#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="202" column="18" selection-start-line="202" selection-start-column="18" selection-end-line="202" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="429" column="18" selection-start-line="429" selection-start-column="18" selection-end-line="429" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56269115">
+          <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
+          <folding>
+            <element signature="e#13942#13943#0" expanded="false" />
+            <element signature="e#13975#13976#0" expanded="false" />
+            <element signature="e#15143#15144#0" expanded="false" />
+            <element signature="e#15175#15176#0" expanded="false" />
+            <element signature="e#15236#15237#0" expanded="false" />
+            <element signature="e#15270#15271#0" expanded="false" />
+            <element signature="e#15319#15320#0" expanded="false" />
+            <element signature="e#15355#15356#0" expanded="false" />
+            <element signature="e#19116#19117#0" expanded="false" />
+            <element signature="e#19148#19149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="303" column="22" selection-start-line="303" selection-start-column="22" selection-end-line="303" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5168196">
+          <caret line="1123" column="14" selection-start-line="1123" selection-start-column="14" selection-end-line="1123" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="52" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="33" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#9896#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfbox/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5294118">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preflight/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="36.25">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preflight-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="44.916668">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="48.041668">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmpbox/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0860927">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.97351">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debugger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.321192">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debugger-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.97351">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.42053">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontbox/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.63907284">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46357617">
+          <caret line="168" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.205298">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

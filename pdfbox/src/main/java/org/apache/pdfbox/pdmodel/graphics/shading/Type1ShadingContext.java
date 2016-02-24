@@ -15,17 +15,13 @@
  */
 package org.apache.pdfbox.pdmodel.graphics.shading;
 
-import java.awt.PaintContext;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.NoninvertibleTransformException;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.io.IOException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
 import org.apache.pdfbox.util.Matrix;
+
+import java.awt.*;
+import java.awt.geom.*;
+import java.awt.image.*;
+import java.io.IOException;
 
 /**
  * AWT PaintContext for function-based (Type 1) shading.
@@ -34,7 +30,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 class Type1ShadingContext extends ShadingContext implements PaintContext
 {
-    private static final Log LOG = LogFactory.getLog(Type1ShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(Type1ShadingContext.class);
 
     private PDShadingType1 type1ShadingType;
     private AffineTransform rat;
@@ -77,7 +73,7 @@ class Type1ShadingContext extends ShadingContext implements PaintContext
         }
         catch (NoninvertibleTransformException ex)
         {
-            LOG.error(ex, ex);
+            System.out.println(ex.toString());
         }
     }
 
@@ -143,7 +139,7 @@ class Type1ShadingContext extends ShadingContext implements PaintContext
                     }
                     catch (IOException e)
                     {
-                        LOG.error("error while processing a function", e);
+                        System.out.println(e.toString());
                     }
                 }
 
@@ -157,7 +153,7 @@ class Type1ShadingContext extends ShadingContext implements PaintContext
                     }
                     catch (IOException e)
                     {
-                        LOG.error("error processing color space", e);
+                        System.out.println(e.toString());
                     }
                 }
                 data[index] = (int) (values[0] * 255);

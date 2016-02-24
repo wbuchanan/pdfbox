@@ -16,26 +16,20 @@
  */
 package org.apache.pdfbox.rendering;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FilenameFilter;
-import java.io.IOException;
+import org.apache.pdfbox.ParallelParameterized;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import javax.imageio.*;
+import java.awt.*;
+import java.awt.image.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import javax.imageio.ImageIO;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.ParallelParameterized;
-import org.apache.pdfbox.pdmodel.PDDocument;
+
 import static org.junit.Assert.fail;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 
 /**
  * Test suite for rendering.
@@ -68,14 +62,14 @@ public class TestPDFToImage
     /**
      * Logger instance.
      */
-    private static final Log LOG = LogFactory.getLog(TestPDFToImage.class);
+    // private static final Log LOG = LogFactory.getLog(TestPDFToImage.class);
 
     static String inDir = "src/test/resources/input/rendering";
     static String outDir = "target/test-output/rendering/";
     
     String filename;
     
-    @Parameterized.Parameters(name = "{0}")
+//    @Parameterized.Parameters(name = "{0}")
     public static Collection<Object[]> data()
     {
         File[] testFiles = new File(inDir).listFiles(new FilenameFilter()
@@ -220,7 +214,7 @@ public class TestPDFToImage
         PDDocument document = null;
         boolean failed = false;
 
-        LOG.info("Opening: " + file.getName());
+        //LOG.info("Opening: " + file.getName());
         try
         {
             new FileOutputStream(new File(outDir, file.getName() + ".parseerror")).close();
@@ -230,14 +224,13 @@ public class TestPDFToImage
             if (numPages < 1)
             {
                 failed = true;
-                LOG.error("file " + file.getName() + " has < 1 page");
+                System.out.println("file " + file.getName() + " has < 1 page");
             }
             else
             {
                 new File(outDir, file.getName() + ".parseerror").delete();
             }
 
-            LOG.info("Rendering: " + file.getName());
             PDFRenderer renderer = new PDFRenderer(document);
             for (int i = 0; i < numPages; i++)
             {
@@ -245,7 +238,7 @@ public class TestPDFToImage
                 new FileOutputStream(new File(fileName + ".rendererror")).close();
                 BufferedImage image = renderer.renderImageWithDPI(i, 96); // Windows native DPI
                 new File(fileName + ".rendererror").delete();
-                LOG.info("Writing: " + fileName);
+                //LOG.info("Writing: " + fileName);
                 new FileOutputStream(new File(fileName + ".writeerror")).close();
                 ImageIO.write(image, "PNG", new File(fileName));
                 new File(fileName + ".writeerror").delete();
@@ -265,7 +258,7 @@ public class TestPDFToImage
         catch (IOException e)
         {
             failed = true;
-            LOG.error("Error converting file " + file.getName());
+            System.out.println("Error converting file " + file.getName());
             throw e;
         }
         finally
@@ -276,7 +269,7 @@ public class TestPDFToImage
             }
         }
 
-        LOG.info("Comparing: " + file.getName());
+        //LOG.info("Comparing: " + file.getName());
 
         //Now check the resulting files ... did we get identical PNG(s)?
         try
@@ -296,7 +289,7 @@ public class TestPDFToImage
             if (outFiles.length == 0)
             {
                 failed = true;
-                LOG.warn("*** TEST FAILURE *** Output missing for file: " + file.getName());
+                //LOG.warn("*** TEST FAILURE *** Output missing for file: " + file.getName());
             }
             for (File outFile : outFiles)
             {
@@ -305,7 +298,7 @@ public class TestPDFToImage
                 if (!inFile.exists())
                 {
                     failed = true;
-                    LOG.warn("*** TEST FAILURE *** Input missing for file: " + inFile.getName());
+                    //LOG.warn("*** TEST FAILURE *** Input missing for file: " + inFile.getName());
                 }
                 else if (!filesAreIdentical(outFile, inFile))
                 {
@@ -315,22 +308,22 @@ public class TestPDFToImage
                     if (bim3 != null)
                     {
                         failed = true;
-                        LOG.warn("*** TEST FAILURE *** Input and output not identical for file: " + inFile.getName());
+                        //LOG.warn("*** TEST FAILURE *** Input and output not identical for file: " + inFile.getName());
                         ImageIO.write(bim3, "png", new File(outFile.getAbsolutePath() + "-diff.png"));
                         System.err.println("Files differ: "  + inFile.getAbsolutePath() + "\n" +
                                            "              " + outFile.getAbsolutePath());
                     }
                     else
                     {
-                        LOG.info("*** TEST OK *** for file: " + inFile.getName());
-                        LOG.info("Deleting: " + outFile.getName());
+                        //LOG.info("*** TEST OK *** for file: " + inFile.getName());
+                        //LOG.info("Deleting: " + outFile.getName());
                         outFile.delete();
                     }
                 }
                 else
                 {
-                    LOG.info("*** TEST OK *** for file: " + inFile.getName());
-                    LOG.info("Deleting: " + outFile.getName());
+                    //LOG.info("*** TEST OK *** for file: " + inFile.getName());
+                    //LOG.info("Deleting: " + outFile.getName());
                     outFile.delete();
                 }
             }
@@ -339,7 +332,7 @@ public class TestPDFToImage
         {
             new FileOutputStream(new File(outDir, file.getName() + ".cmperror")).close();
             failed = true;
-            LOG.error("Error comparing file output for " + file.getName(), e);
+            System.out.println(e.toString());
         }
 
         return !failed;

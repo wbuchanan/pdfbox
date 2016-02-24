@@ -16,16 +16,14 @@
  */
 package org.apache.pdfbox.contentstream.operator.graphics;
 
-import java.io.IOException;
-import java.util.List;
-import java.awt.geom.Point2D;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.contentstream.operator.MissingOperandException;
-
+import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSNumber;
-import org.apache.pdfbox.contentstream.operator.Operator;
+
+import java.awt.geom.*;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * c Append curved segment to path.
@@ -34,8 +32,7 @@ import org.apache.pdfbox.contentstream.operator.Operator;
  */
 public class CurveTo extends GraphicsOperatorProcessor
 {
-    private static final Log LOG = LogFactory.getLog(CurveTo.class);
-    
+
     @Override
     public void process(Operator operator, List<COSBase> operands) throws IOException
     {
@@ -60,7 +57,7 @@ public class CurveTo extends GraphicsOperatorProcessor
 
         if (context.getCurrentPoint() == null)
         {
-            LOG.warn("curveTo (" + point3.x + "," + point3.y + ") without initial MoveTo");
+            System.out.println("curveTo (" + point3.x + "," + point3.y + ") without initial MoveTo");
             context.moveTo(point3.x, point3.y);
         }
         else

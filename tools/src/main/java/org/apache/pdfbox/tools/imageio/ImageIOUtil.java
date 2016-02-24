@@ -16,35 +16,24 @@
  */
 package org.apache.pdfbox.tools.imageio;
 
-import java.awt.image.BufferedImage;
+import org.w3c.dom.NodeList;
+
+import javax.imageio.*;
+import javax.imageio.metadata.*;
+import javax.imageio.stream.*;
+import java.awt.image.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
 
-import javax.imageio.IIOImage;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageOutputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.w3c.dom.NodeList;
-
 /**
  * Handles some ImageIO operations.
  */
 public final class ImageIOUtil
 {
-    /**
-     * Log instance
-     */
-    private static final Log LOG = LogFactory.getLog(ImageIOUtil.class);
+
 
     private ImageIOUtil()
     {
@@ -195,7 +184,6 @@ public final class ImageIOUtil
             }
             if (writer == null)
             {
-                LOG.error("No ImageWriter found for '" + formatName + "' format");
                 StringBuilder sb = new StringBuilder();
                 String[] writerFormatNames = ImageIO.getWriterFormatNames();
                 for (String fmt : writerFormatNames)
@@ -203,7 +191,6 @@ public final class ImageIOUtil
                     sb.append(fmt);
                     sb.append(' ');
                 }
-                LOG.error("Supported formats: " + sb);
                 return false;
             }
 

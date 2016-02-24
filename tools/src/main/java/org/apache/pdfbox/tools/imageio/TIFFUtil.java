@@ -16,9 +16,6 @@
  */
 package org.apache.pdfbox.tools.imageio;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import javax.imageio.ImageWriteParam;
 import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.metadata.IIOMetadata;
@@ -33,7 +30,6 @@ import static org.apache.pdfbox.tools.imageio.MetaUtil.debugLogMetadata;
  */
 final class TIFFUtil
 {
-    private static final Log LOG = LogFactory.getLog(TIFFUtil.class);
 
     private static String tagSetClassName = "com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet";
     
@@ -94,7 +90,6 @@ final class TIFFUtil
 
         if (!SUN_TIFF_FORMAT.equals(metadata.getNativeMetadataFormatName()))
         {
-            LOG.debug("Using unknown TIFF image writer: " + metadata.getNativeMetadataFormatName());
             return;
         }
 

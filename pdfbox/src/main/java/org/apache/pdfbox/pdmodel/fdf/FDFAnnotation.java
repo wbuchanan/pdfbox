@@ -23,8 +23,6 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
@@ -51,7 +49,7 @@ import org.w3c.dom.NodeList;
  * */
 public abstract class FDFAnnotation implements COSObjectable
 {
-    private static final Log LOG = LogFactory.getLog(FDFAnnotation.class);
+    // private static final Log LOG = LogFactory.getLog(FDFAnnotation.class);
 
     /**
      * An annotation flag.
@@ -235,7 +233,7 @@ public abstract class FDFAnnotation implements COSObjectable
         }
         catch (XPathExpressionException e)
         {
-            LOG.debug("Error while evaluating XPath expression for richtext contents");
+            //LOG.debug("Error while evaluating XPath expression for richtext contents");
         }
 
         try
@@ -250,7 +248,7 @@ public abstract class FDFAnnotation implements COSObjectable
         }
         catch (XPathExpressionException e)
         {
-            LOG.debug("Error while evaluating XPath expression for richtext contents");
+            //LOG.debug("Error while evaluating XPath expression for richtext contents");
         }
 
         PDBorderStyleDictionary borderStyle = new PDBorderStyleDictionary();
@@ -398,8 +396,8 @@ public abstract class FDFAnnotation implements COSObjectable
             }
             else
             {
-                LOG.warn("Unknown or unsupported annotation type '"
-                        + fdfDic.getNameAsString(COSName.SUBTYPE) + "'");
+                // LOG.warn("Unknown or unsupported annotation type '"
+ //                         + fdfDic.getNameAsString(COSName.SUBTYPE) + "'");
             }
         }
         return retval;
@@ -994,7 +992,7 @@ public abstract class FDFAnnotation implements COSObjectable
         }
         catch (XPathExpressionException e)
         {
-            LOG.debug("Error while evaluating XPath expression for richtext contents");
+            //LOG.debug("Error while evaluating XPath expression for richtext contents");
         }
         return retval;
     }

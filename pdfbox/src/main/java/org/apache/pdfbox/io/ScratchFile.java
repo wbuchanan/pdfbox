@@ -22,9 +22,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.BitSet;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 /**
  * Implements a memory page handling mechanism as base for creating (multiple)
  * {@link RandomAccess} buffers each having its set of pages (implemented by
@@ -50,7 +47,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class ScratchFile implements Closeable
 {
-    private static final Log LOG = LogFactory.getLog(ScratchFile.class);
+    // private static final Log LOG = LogFactory.getLog(ScratchFile.class);
 
     /** number of pages by which we enlarge the scratch file (reduce I/O-operations) */
     private static final int ENLARGE_PAGE_COUNT = 16;
@@ -145,7 +142,7 @@ public class ScratchFile implements Closeable
         catch (IOException ioe)
         {
             // cannot happen for main memory setup
-            LOG.error("Unexpected exception occurred creating main memory scratch file instance: " + ioe.getMessage() );
+            System.out.println("Unexpected exception occurred creating main memory scratch file instance: " + ioe.getMessage() );
             return null;
         }
     }
@@ -223,7 +220,7 @@ public class ScratchFile implements Closeable
                     {
                         if (!file.delete())
                         {
-                            LOG.warn("Error deleting scratch file: " + file.getAbsolutePath());
+                            //LOG.warn("Error deleting scratch file: " + file.getAbsolutePath());
                         }
                         throw e;
                     }

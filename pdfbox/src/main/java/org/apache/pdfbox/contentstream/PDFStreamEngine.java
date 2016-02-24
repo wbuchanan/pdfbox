@@ -16,27 +16,11 @@
  */
 package org.apache.pdfbox.contentstream;
 
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.contentstream.operator.MissingOperandException;
+import org.apache.pdfbox.contentstream.operator.Operator;
+import org.apache.pdfbox.contentstream.operator.OperatorProcessor;
 import org.apache.pdfbox.contentstream.operator.state.EmptyGraphicsStackException;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSNumber;
-import org.apache.pdfbox.cos.COSObject;
-import org.apache.pdfbox.cos.COSString;
+import org.apache.pdfbox.cos.*;
 import org.apache.pdfbox.filter.MissingImageReaderException;
 import org.apache.pdfbox.pdfparser.PDFStreamParser;
 import org.apache.pdfbox.pdmodel.MissingResourceException;
@@ -59,8 +43,12 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
-import org.apache.pdfbox.contentstream.operator.Operator;
-import org.apache.pdfbox.contentstream.operator.OperatorProcessor;
+
+import java.awt.geom.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
 
 /**
  * Processes a PDF content stream and executes certain operations.
@@ -70,7 +58,6 @@ import org.apache.pdfbox.contentstream.operator.OperatorProcessor;
  */
 public abstract class PDFStreamEngine
 {
-    private static final Log LOG = LogFactory.getLog(PDFStreamEngine.class);
 
     private final Map<String, OperatorProcessor> operators = new HashMap<String, OperatorProcessor>(80);
 
@@ -643,7 +630,7 @@ public abstract class PDFStreamEngine
         PDFont font = textState.getFont();
         if (font == null)
         {
-            LOG.warn("No current font, will use default");
+            System.out.println("No current font, will use default");
             font = PDFontFactory.createDefaultFont();
         }
 
@@ -849,17 +836,17 @@ public abstract class PDFStreamEngine
             e instanceof MissingResourceException ||
             e instanceof MissingImageReaderException)
         {
-            LOG.error(e.getMessage());
+            System.out.println(e.getMessage());
         }
         else if (e instanceof EmptyGraphicsStackException)
         {
-            LOG.warn(e.getMessage());
+            System.out.println(e.getMessage());
         }
         else if (operator.getName().equals("Do"))
         {
             // todo: this too forgiving, but PDFBox has always worked this way for DrawObject
             //       some careful refactoring is needed
-            LOG.warn(e.getMessage());
+            System.out.println(e.getMessage());
         }
         else
         {
@@ -958,7 +945,7 @@ public abstract class PDFStreamEngine
     {
         if (phase < 0)
         {
-            LOG.warn("Dash phase has negative value " + phase + ", set to 0");
+            System.out.println("Dash phase has negative value " + phase + ", set to 0");
             phase = 0;
         }
         PDLineDashPattern lineDash = new PDLineDashPattern(array, phase);

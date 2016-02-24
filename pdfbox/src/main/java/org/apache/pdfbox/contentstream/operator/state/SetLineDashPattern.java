@@ -16,17 +16,14 @@
  */
 package org.apache.pdfbox.contentstream.operator.state;
 
-import java.util.List;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import org.apache.pdfbox.contentstream.operator.MissingOperandException;
 import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.contentstream.operator.OperatorProcessor;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSNumber;
+
+import java.util.List;
 
 /**
  * d: Set the line dash pattern.
@@ -35,8 +32,7 @@ import org.apache.pdfbox.cos.COSNumber;
  */
 public class SetLineDashPattern extends OperatorProcessor
 {
-    private static final Log LOG = LogFactory.getLog(SetLineDashPattern.class);
-    
+
     @Override
     public void process(Operator operator, List<COSBase> arguments) throws MissingOperandException
     {
@@ -71,14 +67,14 @@ public class SetLineDashPattern extends OperatorProcessor
             }
             else
             {
-                LOG.error("dash array has non number element " + base + ", ignored");
+                System.out.println("dash array has non number element " + base + ", ignored");
                 dashArray = new COSArray();
                 break;
             }
         }
         if (dashArray.size() > 0 && allZero)
         {
-            LOG.error("dash lengths all zero, ignored");
+            System.out.println("dash lengths all zero, ignored");
             dashArray = new COSArray();
         }
         context.setLineDashPattern(dashArray, dashPhase);

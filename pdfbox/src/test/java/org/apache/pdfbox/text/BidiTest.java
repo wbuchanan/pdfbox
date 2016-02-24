@@ -17,24 +17,14 @@
 
 package org.apache.pdfbox.text;
 
-import static org.junit.Assert.fail;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.*;
+
+import static org.junit.Assert.fail;
 
 /**
  * Test for the PDButton class.
@@ -45,7 +35,7 @@ public class BidiTest
     /**
      * Logger instance.
      */
-    private static final Log log = LogFactory.getLog(TestTextStripper.class);
+    // private static final Log log = LogFactory.getLog(TestTextStripper.class);
     
     private static final File IN_DIR = new File("src/test/resources/org/apache/pdfbox/text/");
     private static final File outDir = new File("target/test-output");
@@ -108,11 +98,11 @@ public class BidiTest
     {
         if(bSort)
         {
-            log.info("Preparing to parse " + inFile.getName() + " for sorted test");
+            //log.info("Preparing to parse " + inFile.getName() + " for sorted test");
         }
         else
         {
-            log.info("Preparing to parse " + inFile.getName() + " for standard test");
+            //log.info("Preparing to parse " + inFile.getName() + " for standard test");
         }
 
         if (!outDir.exists()) 
@@ -163,8 +153,8 @@ public class BidiTest
 
             if (bLogResult)
             {
-                log.info("Text for " + inFile.getName() + ":");
-                log.info(stripper.getText(document));
+                //log.info("Text for " + inFile.getName() + ":");
+                //log.info(stripper.getText(document));
             }
 
             if (!expectedFile.exists())
@@ -249,9 +239,11 @@ public class BidiTest
                 if( expectedArray[expectedIndex] != actualArray[actualIndex] )
                 {
                     equals = false;
+                    /*
                     log.warn("Lines differ at index"
                      + " expected:" + expectedIndex + "-" + (int)expectedArray[expectedIndex]
                      + " actual:" + actualIndex + "-" + (int)actualArray[actualIndex] );
+                    */
                     break;
                 }
                 expectedIndex = skipWhitespace( expectedArray, expectedIndex );
@@ -264,12 +256,12 @@ public class BidiTest
                 if( expectedIndex != expectedArray.length )
                 {
                     equals = false;
-                    log.warn("Expected line is longer at:" + expectedIndex );
+                    //log.warn("Expected line is longer at:" + expectedIndex );
                 }
                 if( actualIndex != actualArray.length )
                 {
                     equals = false;
-                    log.warn("Actual line is longer at:" + actualIndex );
+                    //log.warn("Actual line is longer at:" + actualIndex );
                 }
             }
         }

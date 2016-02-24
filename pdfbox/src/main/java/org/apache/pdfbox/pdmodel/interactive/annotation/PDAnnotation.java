@@ -16,25 +16,14 @@
  */
 package org.apache.pdfbox.pdmodel.interactive.annotation;
 
-import java.io.IOException;
-import java.util.Calendar;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSInteger;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSNumber;
+import org.apache.pdfbox.cos.*;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.COSObjectable;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.graphics.color.PDColor;
-import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
-import org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYK;
-import org.apache.pdfbox.pdmodel.graphics.color.PDDeviceGray;
-import org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB;
+import org.apache.pdfbox.pdmodel.graphics.color.*;
+
+import java.io.IOException;
+import java.util.Calendar;
 
 /**
  * A PDF annotation.
@@ -46,7 +35,7 @@ public abstract class PDAnnotation implements COSObjectable
     /**
      * Log instance.
      */
-    private static final Log LOG = LogFactory.getLog(PDAnnotation.class);
+    // private static final Log LOG = LogFactory.getLog(PDAnnotation.class);
 
     /**
      * An annotation flag.
@@ -159,7 +148,7 @@ public abstract class PDAnnotation implements COSObjectable
                 // TODO not yet implemented:
                 // Movie, Screen, PrinterMark, TrapNet, Watermark, 3D, Redact
                 annot = new PDAnnotationUnknown(annotDic);
-                LOG.debug("Unknown or unsupported annotation subtype " + subtype);
+                //LOG.debug("Unknown or unsupported annotation subtype " + subtype);
             }
         }
         else
@@ -212,7 +201,7 @@ public abstract class PDAnnotation implements COSObjectable
             }
             else
             {
-                LOG.warn(rectArray + " is not a rectangle array, returning null");
+                //LOG.warn(rectArray + " is not a rectangle array, returning null");
             }
         }
         return rectangle;

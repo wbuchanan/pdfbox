@@ -16,12 +16,11 @@
  */
 package org.apache.pdfbox.filter;
 
+import org.apache.pdfbox.cos.COSDictionary;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSDictionary;
 
 /**
  * Decompresses data encoded using a byte-oriented run-length encoding algorithm,
@@ -31,7 +30,6 @@ import org.apache.pdfbox.cos.COSDictionary;
  */
 final class RunLengthDecodeFilter extends Filter
 {
-    private static final Log LOG = LogFactory.getLog(RunLengthDecodeFilter.class);
     private static final int RUN_LENGTH_EOD = 128;
 
     @Override
@@ -69,6 +67,5 @@ final class RunLengthDecodeFilter extends Filter
     protected void encode(InputStream input, OutputStream encoded, COSDictionary parameters)
             throws IOException
     {
-        LOG.warn("RunLengthDecodeFilter.encode is not implemented yet, skipping this stream.");
     }
 }

@@ -16,21 +16,8 @@
  */
 package org.apache.pdfbox.pdmodel.font;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.fontbox.FontBoxFont;
-import org.apache.fontbox.cff.CFFCIDFont;
-import org.apache.fontbox.cff.CFFFont;
-import org.apache.fontbox.cff.CFFParser;
-import org.apache.fontbox.cff.CFFType1Font;
-import org.apache.fontbox.cff.Type2CharString;
+import org.apache.fontbox.cff.*;
 import org.apache.fontbox.util.BoundingBox;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.io.IOUtils;
@@ -38,6 +25,11 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.common.PDStream;
 import org.apache.pdfbox.util.Matrix;
 
+import java.awt.geom.*;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;
 
@@ -49,7 +41,7 @@ import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;
  */
 public class PDCIDFontType0 extends PDCIDFont
 {
-    private static final Log LOG = LogFactory.getLog(PDCIDFontType0.class);
+    // private static final Log LOG = LogFactory.getLog(PDCIDFontType0.class);
 
     private final CFFCIDFont cidFont;  // Top DICT that uses CIDFont operators
     private final FontBoxFont t1Font; // Top DICT that does not use CIDFont operators
@@ -89,7 +81,7 @@ public class PDCIDFontType0 extends PDCIDFont
         if (bytes != null && bytes.length > 0 && (bytes[0] & 0xff) == '%')
         {
             // PDFBOX-2642 contains a corrupt PFB font instead of a CFF
-            LOG.warn("Found PFB but expected embedded CFF font " + fd.getFontName());
+            //LOG.warn("Found PFB but expected embedded CFF font " + fd.getFontName());
             fontIsDamaged = true;
         }
         else if (bytes != null)
@@ -101,7 +93,7 @@ public class PDCIDFontType0 extends PDCIDFont
             }
             catch (IOException e)
             {
-                LOG.error("Can't read the embedded CFF font " + fd.getFontName(), e);
+                System.out.println(e.toString());
                 fontIsDamaged = true;
             }
         }
@@ -144,8 +136,7 @@ public class PDCIDFontType0 extends PDCIDFont
 
             if (mapping.isFallback())
             {
-                LOG.warn("Using fallback " + font.getName() + " for CID-keyed font " +
-                         getBaseFont());
+
             }
             isEmbedded = false;
             isDamaged = fontIsDamaged;

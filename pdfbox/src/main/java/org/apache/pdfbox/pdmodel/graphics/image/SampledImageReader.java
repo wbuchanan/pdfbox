@@ -16,26 +16,18 @@
  */
 package org.apache.pdfbox.pdmodel.graphics.image;
 
-import java.awt.Graphics2D;
-import java.awt.Paint;
-import java.awt.Point;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.MemoryCacheImageInputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSNumber;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
 import org.apache.pdfbox.pdmodel.graphics.color.PDIndexed;
+
+import javax.imageio.stream.*;
+import java.awt.*;
+import java.awt.image.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
 
 /**
  * Reads a sampled image from a PDF file.
@@ -43,7 +35,7 @@ import org.apache.pdfbox.pdmodel.graphics.color.PDIndexed;
  */
 final class SampledImageReader
 {
-    private static final Log LOG = LogFactory.getLog(SampledImageReader.class);
+    // private static final Log LOG = LogFactory.getLog(SampledImageReader.class);
     
     private SampledImageReader()
     {
@@ -207,7 +199,7 @@ final class SampledImageReader
                 }
                 if (readLen != rowLen)
                 {
-                    LOG.warn("premature EOF, image will be incomplete");
+                    //LOG.warn("premature EOF, image will be incomplete");
                     break;
                 }
             }
@@ -426,15 +418,15 @@ final class SampledImageReader
                     float decode1 = ((COSNumber) cosDecode.get(1)).floatValue();
                     if (decode0 >= 0 && decode0 <= 1 && decode1 >= 0 && decode1 <= 1)
                     {
-                        LOG.warn("decode array " + cosDecode
-                                + " not compatible with color space, using the first two entries");
+                        // LOG.warn("decode array " + cosDecode
+ //                                 + " not compatible with color space, using the first two entries");
                         return new float[]
                         {
                             decode0, decode1
                         };
                     }
                 }
-                LOG.error("decode array " + cosDecode
+                System.out.println("decode array " + cosDecode
                         + " not compatible with color space, using default");
             }
             else

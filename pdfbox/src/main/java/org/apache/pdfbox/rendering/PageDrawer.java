@@ -16,44 +16,11 @@
  */
 package org.apache.pdfbox.rendering;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsDevice;
-import java.awt.Paint;
-import java.awt.RenderingHints;
-import java.awt.Shape;
-import java.awt.Stroke;
-import java.awt.TexturePaint;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Area;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.PathIterator;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSNumber;
+import org.apache.pdfbox.cos.*;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.common.function.PDFunction;
-import org.apache.pdfbox.pdmodel.font.PDCIDFontType0;
-import org.apache.pdfbox.pdmodel.font.PDCIDFontType2;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.font.PDTrueTypeFont;
-import org.apache.pdfbox.pdmodel.font.PDType0Font;
-import org.apache.pdfbox.pdmodel.font.PDType1CFont;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
+import org.apache.pdfbox.pdmodel.font.*;
 import org.apache.pdfbox.pdmodel.graphics.PDLineDashPattern;
 import org.apache.pdfbox.pdmodel.graphics.blend.SoftMaskPaint;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColor;
@@ -76,6 +43,13 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
 
+import java.awt.*;
+import java.awt.geom.*;
+import java.awt.image.*;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Paints a page in a PDF document to a Graphics context. May be subclassed to provide custom
  * rendering.
@@ -88,7 +62,7 @@ import org.apache.pdfbox.util.Vector;
  */
 public class PageDrawer extends PDFGraphicsStreamEngine
 {
-    private static final Log LOG = LogFactory.getLog(PageDrawer.class);
+    // private static final Log LOG = LogFactory.getLog(PageDrawer.class);
 
     // parent document renderer - note: this is needed for not-yet-implemented resource caching
     private final PDFRenderer renderer;
@@ -263,7 +237,7 @@ public class PageDrawer extends PDFGraphicsStreamEngine
                 PDShading shading = shadingPattern.getShading();
                 if (shading == null)
                 {
-                    LOG.error("shadingPattern is null, will be filled with transparency");
+                    System.out.println("shadingPattern is null, will be filled with transparency");
                     return new Color(0,0,0,0);
                 }
                 return shading.toPaint(Matrix.concatenate(getInitialMatrix(),
@@ -504,7 +478,7 @@ public class PageDrawer extends PDFGraphicsStreamEngine
             //TODO PDFBOX-2934
             if (COSName.ALPHA.equals(softMask.getSubType()))
             {
-                LOG.info("alpha smask not implemented yet, is ignored");
+                //LOG.info("alpha smask not implemented yet, is ignored");
                 return parentPaint;
             }
             return new SoftMaskPaint(parentPaint, createSoftMaskRaster(softMask));

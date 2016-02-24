@@ -25,8 +25,6 @@ import java.awt.image.WritableRaster;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.util.Matrix;
 
 /**
@@ -38,7 +36,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 abstract class TriangleBasedShadingContext extends ShadingContext implements PaintContext
 {
-    private static final Log LOG = LogFactory.getLog(TriangleBasedShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(TriangleBasedShadingContext.class);
 
     protected int bitsPerCoordinate;
     protected int bitsPerColorComponent;
@@ -65,11 +63,11 @@ abstract class TriangleBasedShadingContext extends ShadingContext implements Pai
         PDTriangleBasedShadingType triangleBasedShadingType = (PDTriangleBasedShadingType) shading;
         hasFunction = shading.getFunction() != null;
         bitsPerCoordinate = triangleBasedShadingType.getBitsPerCoordinate();
-        LOG.debug("bitsPerCoordinate: " + (Math.pow(2, bitsPerCoordinate) - 1));
+        //LOG.debug("bitsPerCoordinate: " + (Math.pow(2, bitsPerCoordinate) - 1));
         bitsPerColorComponent = triangleBasedShadingType.getBitsPerComponent();
-        LOG.debug("bitsPerColorComponent: " + bitsPerColorComponent);
+        //LOG.debug("bitsPerColorComponent: " + bitsPerColorComponent);
         numberOfColorComponents = hasFunction ? 1 : getShadingColorSpace().getNumberOfComponents();
-        LOG.debug("numberOfColorComponents: " + numberOfColorComponents);
+        //LOG.debug("numberOfColorComponents: " + numberOfColorComponents);
     }
 
     /**

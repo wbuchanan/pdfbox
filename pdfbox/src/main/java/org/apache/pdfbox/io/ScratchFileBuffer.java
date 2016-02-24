@@ -16,12 +16,10 @@
  */
 package org.apache.pdfbox.io;
 
+import org.apache.pdfbox.cos.COSStream;
+
 import java.io.EOFException;
 import java.io.IOException;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSStream;
 
 /**
  * Implementation of {@link RandomAccess} as sequence of multiple fixed size pages handled
@@ -64,7 +62,7 @@ class ScratchFileBuffer implements RandomAccess
     /** number of pages held by this buffer */
     private int pageCount = 0;
     
-    private static final Log LOG = LogFactory.getLog(ScratchFileBuffer.class);
+    // private static final Log LOG = LogFactory.getLog(ScratchFileBuffer.class);
     
     /**
      * Creates a new buffer using pages handled by provided {@link ScratchFile}.
@@ -511,9 +509,9 @@ class ScratchFileBuffer implements RandomAccess
     {
         try
         {
-            if ((pageHandler != null) && LOG.isDebugEnabled())
+            if ((pageHandler != null) )
             {
-                LOG.debug("ScratchFileBuffer not closed!");
+                //LOG.debug("ScratchFileBuffer not closed!");
             }
             close();
         }

@@ -25,8 +25,6 @@ import java.io.OutputStream;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Stack;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSName;
@@ -91,7 +89,7 @@ public final class PDPageContentStream implements Closeable
         }
     }
   
-    private static final Log LOG = LogFactory.getLog(PDPageContentStream.class);
+    // private static final Log LOG = LogFactory.getLog(PDPageContentStream.class);
 
     private final PDDocument document;
     private OutputStream output;
@@ -249,7 +247,7 @@ public final class PDPageContentStream implements Closeable
         {
             if (sourcePage.hasContents())
             {
-                LOG.warn("You are overwriting an existing content, you should use the append mode");
+                //LOG.warn("You are overwriting an existing content, you should use the append mode");
             }
             PDStream contents = new PDStream(document);
             sourcePage.setContents(contents);

@@ -16,21 +16,10 @@
  */
 package org.apache.pdfbox.pdmodel.common;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import org.apache.pdfbox.cos.*;
 
-import java.util.Set;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSString;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * This class represents a node in a name tree.
@@ -39,7 +28,7 @@ import org.apache.pdfbox.cos.COSString;
  */
 public abstract class PDNameTreeNode<T extends COSObjectable> implements COSObjectable
 {
-    private static final Log LOG = LogFactory.getLog(PDNameTreeNode.class);
+    // private static final Log LOG = LogFactory.getLog(PDNameTreeNode.class);
     
     private final COSDictionary node;
     private PDNameTreeNode parent;
@@ -196,7 +185,8 @@ public abstract class PDNameTreeNode<T extends COSObjectable> implements COSObje
                 catch (IOException exception)
                 {
                     node.setItem(COSName.LIMITS, null);
-                    LOG.error("Error while calculating the Limits of a PageNameTreeNode:", exception);
+                    System.out.println("Error while calculating the Limits of" +
+                            " a PageNameTreeNode:" + exception.toString());
                 }
             }
         }
@@ -234,7 +224,7 @@ public abstract class PDNameTreeNode<T extends COSObjectable> implements COSObje
             }
             else
             {
-                LOG.warn("NameTreeNode does not have \"names\" nor \"kids\" objects.");
+                //LOG.warn("NameTreeNode does not have \"names\" nor \"kids\" objects.");
             }
         }
         return retval;

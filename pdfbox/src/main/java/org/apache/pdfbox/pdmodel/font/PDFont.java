@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.fontbox.afm.FontMetrics;
 import org.apache.fontbox.cmap.CMap;
 import org.apache.fontbox.util.BoundingBox;
@@ -47,7 +45,7 @@ import org.apache.pdfbox.util.Vector;
  */
 public abstract class PDFont implements COSObjectable, PDFontLike
 {
-    private static final Log LOG = LogFactory.getLog(PDFont.class);
+    // private static final Log LOG = LogFactory.getLog(PDFont.class);
     protected static final Matrix DEFAULT_FONT_MATRIX = new Matrix(0.001f, 0, 0, 0.001f, 0, 0);
 
     protected final COSDictionary dict;
@@ -122,7 +120,7 @@ public abstract class PDFont implements COSObjectable, PDFontLike
             toUnicodeCMap = readCMap(toUnicode);
             if (toUnicodeCMap != null && !toUnicodeCMap.hasUnicodeMappings())
             {
-                LOG.warn("Invalid ToUnicode CMap in font " + getName());
+                //LOG.warn("Invalid ToUnicode CMap in font " + getName());
             }
         }
         else
@@ -507,7 +505,7 @@ public abstract class PDFont implements COSObjectable, PDFontLike
             }
             catch (Exception e)
             {
-                LOG.error("Can't determine the width of the space character, assuming 250", e);
+                System.out.println(e.toString());
                 fontWidthOfSpace = 250f;
             }
         }

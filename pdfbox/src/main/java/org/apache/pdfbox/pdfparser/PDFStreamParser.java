@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.contentstream.PDContentStream;
 import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSBase;
@@ -46,7 +44,7 @@ public class PDFStreamParser extends BaseParser
     /**
      * Log instance.
      */
-    private static final Log LOG = LogFactory.getLog(PDFStreamParser.class);
+    // private static final Log LOG = LogFactory.getLog(PDFStreamParser.class);
 
     private final List<Object> streamObjects = new ArrayList<Object>( 100 );
     
@@ -404,7 +402,7 @@ public class PDFStreamParser extends BaseParser
         }
         if (!noBinData)
         {
-            LOG.warn("ignoring 'EI' assumed to be in the middle of inline image");
+            //LOG.warn("ignoring 'EI' assumed to be in the middle of inline image");
         }
         return noBinData;
     }

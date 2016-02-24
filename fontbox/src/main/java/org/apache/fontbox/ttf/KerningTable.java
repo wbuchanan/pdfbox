@@ -18,9 +18,6 @@ package org.apache.fontbox.ttf;
 
 import java.io.IOException;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 /**
  * A 'kern' table in a true type font.
  *
@@ -29,7 +26,6 @@ import org.apache.commons.logging.LogFactory;
 public class KerningTable extends TTFTable
 {
 
-    private static final Log LOG = LogFactory.getLog(KerningTable.class);
 
     /**
      * Tag to identify this table.
@@ -69,7 +65,7 @@ public class KerningTable extends TTFTable
         }
         else
         {
-            LOG.debug("Skipped kerning table due to an unsupported kerning table version: " + version);
+            System.out.println("Skipped kerning table due to an unsupported kerning table version: " + version);
         }
         if (numSubtables > 0)
         {

@@ -17,12 +17,9 @@
 package org.apache.pdfbox.pdmodel.font.encoding;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +29,7 @@ import java.util.Map;
  */
 public final class GlyphList
 {
-    private static final Log LOG = LogFactory.getLog(GlyphList.class);
+    // private static final Log LOG = LogFactory.getLog(GlyphList.class);
 
     // Adobe Glyph List (AGL)
     private static final GlyphList DEFAULT = load("glyphlist.txt", 4281);
@@ -147,8 +144,8 @@ public final class GlyphList
 
                     if (nameToUnicode.containsKey(name))
                     {
-                        LOG.warn("duplicate value for " + name + " -> " + parts[1] + " " +
-                                 nameToUnicode.get(name));
+                        // // LOG.warn("duplicate value for " + name + " -> " + parts[1] + " " +
+ //  		//                                  nameToUnicode.get(name));
                     }
 
                     int[] codePoints = new int[unicodeList.length];
@@ -248,7 +245,7 @@ public final class GlyphList
                         int codePoint = Integer.parseInt(name.substring(chPos, chPos + 4), 16);
                         if (codePoint > 0xD7FF && codePoint < 0xE000)
                         {
-                            LOG.warn("Unicode character name with disallowed code area: " + name);
+                            //LOG.warn("Unicode character name with disallowed code area: " + name);
                         }
                         else
                         {
@@ -259,7 +256,7 @@ public final class GlyphList
                 }
                 catch (NumberFormatException nfe)
                 {
-                    LOG.warn("Not a number in Unicode character name: " + name);
+                    //LOG.warn("Not a number in Unicode character name: " + name);
                 }
             }
             else if (name.startsWith("u") && name.length() == 5)
@@ -270,7 +267,7 @@ public final class GlyphList
                     int codePoint = Integer.parseInt(name.substring(1), 16);
                     if (codePoint > 0xD7FF && codePoint < 0xE000)
                     {
-                        LOG.warn("Unicode character name with disallowed code area: " + name);
+                        //LOG.warn("Unicode character name with disallowed code area: " + name);
                     }
                     else
                     {
@@ -279,7 +276,7 @@ public final class GlyphList
                 }
                 catch (NumberFormatException nfe)
                 {
-                    LOG.warn("Not a number in Unicode character name: " + name);
+                    //LOG.warn("Not a number in Unicode character name: " + name);
                 }
             }
             uniNameToUnicodeCache.put(name, unicode);

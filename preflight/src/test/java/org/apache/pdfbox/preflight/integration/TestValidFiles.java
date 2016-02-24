@@ -21,16 +21,7 @@ package org.apache.pdfbox.preflight.integration;
  * 
  ****************************************************************************/
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.preflight.PreflightDocument;
 import org.apache.pdfbox.preflight.ValidationResult;
@@ -44,6 +35,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 @RunWith(Parameterized.class)
 public class TestValidFiles
 {
@@ -56,14 +54,9 @@ public class TestValidFiles
 
     protected File path;
 
-    protected static Log staticLogger = LogFactory.getLog("Test");
-
-    protected Log logger = null;
-
     public TestValidFiles(File path)
     {
         this.path = path;
-        this.logger = LogFactory.getLog(path != null ? path.getName() : "dummy");
     }
 
     protected static Collection<Object[]> stopIfExpected() throws Exception
@@ -81,7 +74,7 @@ public class TestValidFiles
         String isartor = System.getProperty(ISARTOR_FILES);
         if (isartor == null)
         {
-            staticLogger.warn(ISARTOR_FILES + " (where are isartor pdf files) is not defined.");
+            System.out.println(ISARTOR_FILES + " (where are isartor pdf files) is not defined.");
             return stopIfExpected();
         }
         File root = new File(isartor);
@@ -126,7 +119,7 @@ public class TestValidFiles
     {
         if (path == null)
         {
-            logger.warn("This is an empty test");
+            System.out.println("This is an empty test");
             return;
         }
         PreflightDocument document = null;

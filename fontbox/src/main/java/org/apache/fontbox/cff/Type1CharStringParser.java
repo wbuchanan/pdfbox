@@ -21,9 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 /**
  * This class represents a converter for a mapping into a Type 1 sequence.
  *
@@ -34,7 +31,6 @@ import org.apache.commons.logging.LogFactory;
  */
 public class Type1CharStringParser
 {
-    private static final Log LOG = LogFactory.getLog(Type1CharStringParser.class);
 
     // 1-byte commands
     static final int RETURN = 11;
@@ -84,7 +80,7 @@ public class Type1CharStringParser
                 Object obj = sequence.remove(sequence.size() - 1);
                 if (!(obj instanceof Integer))
                 {
-                    LOG.warn("Parameter " + obj + " for CALLSUBR is ignored, integer expected in glyph '"
+                    System.out.println("Parameter " + obj + " for CALLSUBR is ignored, integer expected in glyph '"
                             + glyphName + "' of font " + fontName);
                     continue;
                 }
@@ -151,7 +147,7 @@ public class Type1CharStringParser
 
                 if (results.size() > 0)
                 {
-                    LOG.warn("Value left on the PostScript stack in glyph " + glyphName + " of font " + fontName);
+                    System.out.println("Value left on the PostScript stack in glyph " + glyphName + " of font " + fontName);
                 }
             }
             else if (b0 >= 0 && b0 <= 31)

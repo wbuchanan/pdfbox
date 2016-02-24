@@ -16,28 +16,7 @@
  */
 package org.apache.pdfbox.tools.imageio;
 
-import java.awt.Color;
-import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.stream.ImageInputStream;
-
 import junit.framework.TestCase;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -53,13 +32,22 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import javax.imageio.*;
+import javax.imageio.metadata.*;
+import javax.imageio.stream.*;
+import java.awt.*;
+import java.awt.image.*;
+import java.io.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 /**
  * Test suite for ImageIOUtil.
  */
 public class TestImageIOUtils extends TestCase
 {
-    private static final Log LOG = LogFactory.getLog(TestImageIOUtils.class);
-    
+
     /**
      * Check whether the resource images can be saved.
      * 
@@ -108,7 +96,6 @@ public class TestImageIOUtils extends TestCase
     {
         PDDocument document = null;
         String imageType = "png";
-        LOG.info("Preparing to convert " + file.getName());
         try
         {
             float dpi = 36; // low DPI so that rendering is FAST
@@ -236,7 +223,6 @@ public class TestImageIOUtils extends TestCase
         PDFRenderer renderer = new PDFRenderer(document);
         BufferedImage image = renderer.renderImageWithDPI(0, dpi, imageType);
         String fileName = outputPrefix + 1;
-        LOG.info("Writing: " + fileName + "." + imageFormat);
         System.out.println("  " + fileName + "." + imageFormat); // for Maven (keep me!)
         boolean res = ImageIOUtil.writeImage(image, fileName + "." + imageFormat, Math.round(dpi));
         assertTrue("ImageIOUtil.writeImage() failed for file " + fileName, res);

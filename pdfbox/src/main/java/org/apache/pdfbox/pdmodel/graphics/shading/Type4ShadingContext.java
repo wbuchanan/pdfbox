@@ -16,22 +16,19 @@
  */
 package org.apache.pdfbox.pdmodel.graphics.shading;
 
-import java.awt.Rectangle;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.awt.image.ColorModel;
-import java.io.EOFException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.MemoryCacheImageInputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSStream;
 import org.apache.pdfbox.pdmodel.common.PDRange;
 import org.apache.pdfbox.util.Matrix;
+
+import javax.imageio.stream.*;
+import java.awt.*;
+import java.awt.geom.*;
+import java.awt.image.*;
+import java.io.EOFException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * AWT PaintContext for Gouraud Triangle Mesh (Type 4) shading.
@@ -41,7 +38,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 class Type4ShadingContext extends GouraudShadingContext
 {
-    private static final Log LOG = LogFactory.getLog(Type4ShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(Type4ShadingContext.class);
     private final int bitsPerFlag;
 
     /**
@@ -56,11 +53,11 @@ class Type4ShadingContext extends GouraudShadingContext
                                Matrix matrix, Rectangle deviceBounds) throws IOException
     {
         super(shading, cm, xform, matrix);
-        LOG.debug("Type4ShadingContext");
+        //LOG.debug("Type4ShadingContext");
 
         bitsPerFlag = shading.getBitsPerFlag();
         //TODO handle cases where bitperflag isn't 8
-        LOG.debug("bitsPerFlag: " + bitsPerFlag);
+        //LOG.debug("bitsPerFlag: " + bitsPerFlag);
         setTriangleList(collectTriangles(shading, xform, matrix));
         createPixelTable(deviceBounds);
     }
@@ -91,7 +88,7 @@ class Type4ShadingContext extends GouraudShadingContext
             }
             catch (EOFException ex)
             {
-                LOG.error(ex);
+                System.out.println(ex);
             }
 
             while (true)
@@ -110,14 +107,14 @@ class Type4ShadingContext extends GouraudShadingContext
                             flag = (byte) (mciis.readBits(bitsPerFlag) & 3);
                             if (flag != 0)
                             {
-                                LOG.error("bad triangle: " + flag);
+                                System.out.println("bad triangle: " + flag);
                             }
                             p1 = readVertex(mciis, maxSrcCoord, maxSrcColor, rangeX, rangeY, colRange,
                                             matrix, xform);
                             mciis.readBits(bitsPerFlag);
                             if (flag != 0)
                             {
-                                LOG.error("bad triangle: " + flag);
+                                System.out.println("bad triangle: " + flag);
                             }
                             p2 = readVertex(mciis, maxSrcCoord, maxSrcColor, rangeX, rangeY, colRange,
                                             matrix, xform);
@@ -131,7 +128,7 @@ class Type4ShadingContext extends GouraudShadingContext
                             lastIndex = list.size() - 1;
                             if (lastIndex < 0)
                             {
-                                LOG.error("broken data stream: " + list.size());
+                                System.out.println("broken data stream: " + list.size());
                             }
                             else
                             {
@@ -149,7 +146,7 @@ class Type4ShadingContext extends GouraudShadingContext
                             }
                             break;
                         default:
-                            LOG.warn("bad flag: " + flag);
+                            //LOG.warn("bad flag: " + flag);
                             break;
                     }
                 }

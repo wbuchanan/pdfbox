@@ -16,27 +16,18 @@
  */
 package org.apache.pdfbox.filter;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
+import org.apache.pdfbox.cos.COSDictionary;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import javax.imageio.*;
+import javax.imageio.metadata.*;
+import javax.imageio.stream.*;
+import java.awt.image.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.Field;
-
-import javax.imageio.IIOException;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageInputStream;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
 
 /**
  * Decompresses data encoded using a DCT (discrete cosine transform)
@@ -46,7 +37,6 @@ import org.w3c.dom.NodeList;
  */
 final class DCTFilter extends Filter
 {
-    private static final Log LOG = LogFactory.getLog(DCTFilter.class);
 
     @Override
     public DecodeResult decode(InputStream encoded, OutputStream decoded,
@@ -155,7 +145,6 @@ final class DCTFilter extends Filter
                         break;
                     case 1:
                         // TODO YCbCr
-                        LOG.warn("YCbCr JPEGs not implemented");
                         break;
                     case 2:
                         raster = fromYCCKtoCMYK(raster);

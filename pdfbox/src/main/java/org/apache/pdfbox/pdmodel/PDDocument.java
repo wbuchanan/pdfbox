@@ -16,42 +16,14 @@
  */
 package org.apache.pdfbox.pdmodel;
 
-import java.io.BufferedOutputStream;
-import java.io.Closeable;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSDocument;
-import org.apache.pdfbox.cos.COSInteger;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSObject;
-import org.apache.pdfbox.io.IOUtils;
-import org.apache.pdfbox.io.MemoryUsageSetting;
-import org.apache.pdfbox.io.RandomAccessBuffer;
-import org.apache.pdfbox.io.RandomAccessBufferedFileInputStream;
-import org.apache.pdfbox.io.RandomAccessRead;
-import org.apache.pdfbox.io.ScratchFile;
+import org.apache.pdfbox.cos.*;
+import org.apache.pdfbox.io.*;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdfwriter.COSWriter;
 import org.apache.pdfbox.pdmodel.common.COSArrayList;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.common.PDStream;
-import org.apache.pdfbox.pdmodel.encryption.AccessPermission;
-import org.apache.pdfbox.pdmodel.encryption.PDEncryption;
-import org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy;
-import org.apache.pdfbox.pdmodel.encryption.SecurityHandler;
-import org.apache.pdfbox.pdmodel.encryption.SecurityHandlerFactory;
+import org.apache.pdfbox.pdmodel.encryption.*;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceDictionary;
@@ -62,6 +34,12 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * This is the in-memory representation of the PDF document.
  * The #close() method must be called once the document is no longer needed.
@@ -70,7 +48,7 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField;
  */
 public class PDDocument implements Closeable
 {
-    private static final Log LOG = LogFactory.getLog(PDDocument.class);
+    // private static final Log LOG = LogFactory.getLog(PDDocument.class);
 
     private final COSDocument document;
 
@@ -128,8 +106,6 @@ public class PDDocument implements Closeable
         }
         catch (IOException ioe)
         {
-            LOG.warn("Error initializing scratch file: " + ioe.getMessage() +
-                     ". Fall back to main memory usage only.");
             try
             {
                 scratchFile = new ScratchFile(MemoryUsageSetting.setupMainMemoryOnly());
@@ -1201,8 +1177,6 @@ public class PDDocument implements Closeable
     {
         if (isAllSecurityToBeRemoved())
         {
-            LOG.warn("do not call setAllSecurityToBeRemoved(true) before calling protect(), "
-                    + "as protect() implies setAllSecurityToBeRemoved(false)");
             setAllSecurityToBeRemoved(false);
         }
         
@@ -1298,7 +1272,8 @@ public class PDDocument implements Closeable
                 }
                 catch(NumberFormatException exception)
                 {
-                    LOG.error("Can't extract the version number of the document catalog.", exception);
+                    System.out.println("Can't extract the version number of " +
+                            "the document catalog." + exception.toString());
                 }
             }
             // the most recent version is the correct one
@@ -1327,7 +1302,7 @@ public class PDDocument implements Closeable
         // the version can't be downgraded
         if (newVersion < currentVersion)
         {
-            LOG.error("It's not allowed to downgrade the version of a pdf.");
+			System.out.println("It's not allowed to downgrade the version of a pdf.");
             return;
         }
         // update the catalog version if the document version is >= 1.4

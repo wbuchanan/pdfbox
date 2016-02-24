@@ -21,8 +21,6 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
@@ -36,7 +34,7 @@ import org.w3c.dom.Element;
  */
 public class FDFAnnotationFreeText extends FDFAnnotation
 {
-    private static final Log LOG = LogFactory.getLog(FDFAnnotationFreeText.class);
+    // private static final Log LOG = LogFactory.getLog(FDFAnnotationFreeText.class);
  
     /**
      * COS Model value for SubType entry.
@@ -84,7 +82,7 @@ public class FDFAnnotationFreeText extends FDFAnnotation
         }
         catch (XPathExpressionException ex)
         {
-            LOG.debug("Error while evaluating XPath expression");
+            //LOG.debug("Error while evaluating XPath expression");
         }
         initCallout(element);
         String rotation = element.getAttribute("rotation");

@@ -16,13 +16,6 @@
  */
 package org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible;
 
-import java.awt.geom.AffineTransform;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -33,6 +26,11 @@ import org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField;
 
+import java.awt.geom.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * Using that class, we build pdf template.
  * @author Vakhtang Koroghlishvili
@@ -40,7 +38,7 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField;
 public class PDFTemplateCreator
 {
     PDFTemplateBuilder pdfBuilder;
-    private static final Log logger = LogFactory.getLog(PDFTemplateCreator.class);
+
 
     /**
      * sets PDFBuilder
@@ -70,7 +68,7 @@ public class PDFTemplateCreator
      */
     public InputStream buildPDF(PDVisibleSignDesigner properties) throws IOException
     {
-        logger.info("pdf building has been started");
+        // logger.info("pdf building has been started");
         PDFTemplateStructure pdfStructure = pdfBuilder.getStructure();
 
         // we create array of [Text, ImageB, ImageC, ImageI]
@@ -151,7 +149,7 @@ public class PDFTemplateCreator
         pdfBuilder.createWidgetDictionary(pdSignatureField, holderFormResources);
         
         ByteArrayInputStream in = pdfStructure.getTemplateAppearanceStream();
-        logger.info("stream returning started, size= " + in.available());
+        // logger.info("stream returning started, size= " + in.available());
         
         // we must close the document
         template.close();

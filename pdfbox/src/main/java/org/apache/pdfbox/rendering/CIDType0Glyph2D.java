@@ -20,8 +20,6 @@ import java.awt.geom.GeneralPath;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.font.PDCIDFontType0;
 
 /**
@@ -31,7 +29,7 @@ import org.apache.pdfbox.pdmodel.font.PDCIDFontType0;
  */
 final class CIDType0Glyph2D implements Glyph2D
 {
-    private static final Log LOG = LogFactory.getLog(CIDType0Glyph2D.class);
+    // private static final Log LOG = LogFactory.getLog(CIDType0Glyph2D.class);
 
     private final Map<Integer, GeneralPath> cache = new HashMap<Integer, GeneralPath>();
     private final PDCIDFontType0 font;
@@ -60,7 +58,7 @@ final class CIDType0Glyph2D implements Glyph2D
                 {
                     int cid = font.getParent().codeToCID(code);
                     String cidHex = String.format("%04x", cid);
-                    LOG.warn("No glyph for " + code + " (CID " + cidHex + ") in font " + fontName);
+                    //LOG.warn("No glyph for " + code + " (CID " + cidHex + ") in font " + fontName);
                 }
     
                 path = font.getPath(code);
@@ -70,7 +68,7 @@ final class CIDType0Glyph2D implements Glyph2D
             catch (IOException e)
             {
                 // todo: escalate this error?
-                LOG.error("Glyph rendering failed", e);
+                System.out.println(e.toString());
                 path = new GeneralPath();
             }
         }

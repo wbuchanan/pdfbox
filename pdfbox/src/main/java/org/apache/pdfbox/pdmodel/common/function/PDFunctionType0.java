@@ -16,17 +16,14 @@
  */
 package org.apache.pdfbox.pdmodel.common.function;
 
-import java.io.IOException;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.MemoryCacheImageInputStream;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSInteger;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.pdmodel.common.PDRange;
+
+import javax.imageio.stream.*;
+import java.io.IOException;
 
 /**
  * This class represents a type 0 function in a PDF document.
@@ -41,7 +38,7 @@ public class PDFunctionType0 extends PDFunction
     /**
      * Log instance.
      */
-    private static final Log LOG = LogFactory.getLog(PDFunctionType0.class);
+    // private static final Log LOG = LogFactory.getLog(PDFunctionType0.class);
 
     /**
      * An array of 2 x m numbers specifying the linear mapping of input values 
@@ -138,7 +135,8 @@ public class PDFunctionType0 extends PDFunction
             }
             catch (IOException exception)
             {
-                LOG.error("IOException while reading the sample values of this function.", exception);
+                System.out.println("IOException while reading the sample " +
+                        "values of this function." + exception.toString());
             }
         }
         return samples;

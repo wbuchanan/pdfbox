@@ -16,15 +16,13 @@
  */
 package org.apache.pdfbox.tools;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.multipdf.Overlay;
 import org.apache.pdfbox.multipdf.Overlay.Position;
 import org.apache.pdfbox.pdmodel.PDDocument;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 
@@ -35,7 +33,6 @@ import org.apache.pdfbox.pdmodel.PDDocument;
  */
 public final class OverlayPDF 
 {
-    private static final Log LOG = LogFactory.getLog(OverlayPDF.class);
 
     // Command line options
     private static final String POSITION = "-position";
@@ -145,7 +142,6 @@ public final class OverlayPDF
         } 
         catch (IOException e) 
         {
-            LOG.error("Overlay failed: " + e.getMessage(), e);
             throw e;
         }
     }

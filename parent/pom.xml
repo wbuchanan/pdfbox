@@ -63,11 +63,6 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>1.2</version>
-            </dependency>
-            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>2.4</version>
@@ -88,12 +83,7 @@
                 <artifactId>bcpkix-jdk15on</artifactId>
                 <version>1.54</version>
             </dependency>
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>1.2.17</version>
-            </dependency>
-          
+
             <!-- For legal reasons (incompatible license), these two dependencies 
             are to be used only in the tests and may not be distributed. 
             See also LEGAL-195 -->
@@ -150,26 +140,38 @@
 
     <build>
         <plugins>
+
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
                 <configuration>
                     <showDeprecation>true</showDeprecation>
-                    <target>1.6</target>
-                    <source>1.6</source>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <links>
-                        <link>http://download.oracle.com/javase/1.6.0/docs/api/</link>
-                    </links>
-                    <encoding>UTF-8</encoding>
-                    <notimestamp>true</notimestamp>
-                </configuration>
+                <version>2.9</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <source>1.8</source>
+                            <encoding>UTF-8</encoding>
+                            <notimestamp>true</notimestamp>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
+
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
@@ -217,7 +219,7 @@
 	                  <configuration>
 	                    <signature>
 	                      <groupId>org.codehaus.mojo.signature</groupId>
-	                      <artifactId>java16</artifactId>
+	                      <artifactId>java18</artifactId>
 	                      <version>1.0</version>
 	                    </signature>
 	                  </configuration>

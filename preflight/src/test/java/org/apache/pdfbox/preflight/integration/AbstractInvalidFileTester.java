@@ -21,12 +21,6 @@ package org.apache.pdfbox.preflight.integration;
  * 
  ****************************************************************************/
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.preflight.PreflightDocument;
 import org.apache.pdfbox.preflight.ValidationResult;
@@ -39,6 +33,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 @RunWith(Parameterized.class)
 public abstract class AbstractInvalidFileTester
@@ -59,9 +57,6 @@ public abstract class AbstractInvalidFileTester
      */
     protected File path;
 
-    protected static Log staticLogger = LogFactory.getLog("Test");
-
-    protected Log logger = null;
 
     /**
      * Prepare the test for one file
@@ -75,7 +70,6 @@ public abstract class AbstractInvalidFileTester
     {
         this.path = path;
         this.expectedError = error;
-        this.logger = LogFactory.getLog(this.getClass());
     }
 
     @Test()
@@ -83,7 +77,7 @@ public abstract class AbstractInvalidFileTester
     {
         if (path == null)
         {
-            logger.warn("This is an empty test");
+            System.out.println("This is an empty test");
             return;
         }
         PreflightDocument document = null;
@@ -124,7 +118,7 @@ public abstract class AbstractInvalidFileTester
             {
                 if (this.expectedError == null)
                 {
-                    logger.info("File invalid as expected (no expected code) :" + this.path.getAbsolutePath());
+                    System.out.println("File invalid as expected (no expected code) :" + this.path.getAbsolutePath());
                 }
                 else if (!found)
                 {

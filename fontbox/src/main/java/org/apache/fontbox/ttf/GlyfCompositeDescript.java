@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * Glyph description for composite glyphs. Composite glyphs are made up of one
@@ -35,10 +33,6 @@ import org.apache.commons.logging.LogFactory;
  */
 public class GlyfCompositeDescript extends GlyfDescript
 {
-    /**
-     * Log instance.
-     */
-    private static final Log LOG = LogFactory.getLog(GlyfCompositeDescript.class);
 
     private final List<GlyfCompositeComp> components = new ArrayList<GlyfCompositeComp>();
     private GlyphTable glyphTable = null;
@@ -86,7 +80,7 @@ public class GlyfCompositeDescript extends GlyfDescript
         }
         if (beingResolved)
         {
-            LOG.error("Circular reference in GlyfCompositeDesc");
+            System.out.println("Circular reference in GlyfCompositeDesc");
             return;
         }
         beingResolved = true;
@@ -201,13 +195,13 @@ public class GlyfCompositeDescript extends GlyfDescript
     {
         if (!resolved)
         {
-            LOG.error("getPointCount called on unresolved GlyfCompositeDescript");
+            System.out.println("getPointCount called on unresolved GlyfCompositeDescript");
         }
         GlyfCompositeComp c = components.get(components.size() - 1);
         GlyphDescription gd = getGlypDescription(c.getGlyphIndex());
         if (gd == null)
         {
-            LOG.error("getGlypDescription(" + c.getGlyphIndex() + ") is null, returning 0");
+            System.out.println("getGlypDescription(" + c.getGlyphIndex() + ") is null, returning 0");
             return 0;
         }
         return c.getFirstIndex() + gd.getPointCount();
@@ -221,7 +215,9 @@ public class GlyfCompositeDescript extends GlyfDescript
     {
         if (!resolved)
         {
-            LOG.error("getContourCount called on unresolved GlyfCompositeDescript");
+            System.out.println(".toString()getContourCount called on " +
+                    "unresolved " +
+                    "GlyfCompositeDescript");
         }
         GlyfCompositeComp c = components.get(components.size() - 1);
         return c.getFirstContour() + getGlypDescription(c.getGlyphIndex()).getContourCount();
@@ -276,7 +272,7 @@ public class GlyfCompositeDescript extends GlyfDescript
         }
         catch (IOException e)
         {
-            LOG.error(e);
+            System.out.println(e.toString());
             return null;
         }
     }

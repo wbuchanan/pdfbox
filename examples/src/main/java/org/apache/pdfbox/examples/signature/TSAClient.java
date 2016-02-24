@@ -16,6 +16,13 @@
  */
 package org.apache.pdfbox.examples.signature;
 
+import org.apache.pdfbox.io.IOUtils;
+import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
+import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
+import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
+import org.bouncycastle.tsp.*;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -25,19 +32,6 @@ import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.io.IOUtils;
-import org.bouncycastle.asn1.ASN1ObjectIdentifier;
-import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
-import org.bouncycastle.asn1.oiw.OIWObjectIdentifiers;
-import org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers;
-import org.bouncycastle.tsp.TSPException;
-import org.bouncycastle.tsp.TimeStampRequest;
-import org.bouncycastle.tsp.TimeStampRequestGenerator;
-import org.bouncycastle.tsp.TimeStampResponse;
-import org.bouncycastle.tsp.TimeStampToken;
-
 /**
  * Time Stamping Authority (TSA) Client [RFC 3161].
  * @author Vakhtang Koroghlishvili
@@ -45,7 +39,6 @@ import org.bouncycastle.tsp.TimeStampToken;
  */
 public class TSAClient
 {
-    private static final Log LOG = LogFactory.getLog(TSAClient.class);
 
     private final URL url;
     private final String username;
@@ -116,7 +109,7 @@ public class TSAClient
     // throws IOException if a connection to the TSA cannot be established
     private byte[] getTSAResponse(byte[] request) throws IOException
     {
-        LOG.debug("Opening connection to TSA server");
+        System.out.println("Opening connection to TSA server");
 
         // todo: support proxy servers
         URLConnection connection = url.openConnection();
@@ -124,7 +117,7 @@ public class TSAClient
         connection.setDoInput(true);
         connection.setRequestProperty("Content-Type", "application/timestamp-query");
 
-        LOG.debug("Established connection to TSA server");
+        System.out.println("Established connection to TSA server");
 
         if (username != null && password != null && !username.isEmpty() && !password.isEmpty())
         {
@@ -143,7 +136,7 @@ public class TSAClient
             IOUtils.closeQuietly(output);
         }
 
-        LOG.debug("Waiting for response from TSA server");
+        System.out.println("Waiting for response from TSA server");
 
         InputStream input = null;
         byte[] response;
@@ -157,7 +150,7 @@ public class TSAClient
             IOUtils.closeQuietly(input);
         }
 
-        LOG.debug("Received response from TSA server");
+        System.out.println("Received response from TSA server");
 
         return response;
     }

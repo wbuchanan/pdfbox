@@ -17,16 +17,6 @@
 
 package org.apache.pdfbox.pdmodel.font;
 
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.fontbox.EncodedFont;
 import org.apache.fontbox.FontBoxFont;
 import org.apache.fontbox.cff.CFFParser;
@@ -42,6 +32,12 @@ import org.apache.pdfbox.pdmodel.font.encoding.StandardEncoding;
 import org.apache.pdfbox.pdmodel.font.encoding.Type1Encoding;
 import org.apache.pdfbox.util.Matrix;
 
+import java.awt.geom.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;
 
@@ -53,7 +49,7 @@ import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;
  */
 public class PDType1CFont extends PDSimpleFont
 {
-    private static final Log LOG = LogFactory.getLog(PDType1CFont.class);
+    // private static final Log LOG = LogFactory.getLog(PDType1CFont.class);
 
     private final Map<String, Float> glyphHeights = new HashMap<String, Float>();
     private Float avgWidth = null;
@@ -86,7 +82,7 @@ public class PDType1CFont extends PDSimpleFont
                 bytes = IOUtils.toByteArray(ff3Stream.createInputStream());
                 if (bytes.length == 0)
                 {
-                    LOG.error("Invalid data for embedded Type1C font " + getName());
+                    System.out.println("Invalid data for embedded Type1C font " + getName());
                     bytes = null;
                 }
             }
@@ -105,7 +101,8 @@ public class PDType1CFont extends PDSimpleFont
         }
         catch (IOException e)
         {
-            LOG.error("Can't read the embedded Type1C font " + getName(), e);
+            System.out.println("Can't read the embedded Type1C font " +
+                    getName() + " " + e.toString());
             fontIsDamaged = true;
         }
         isDamaged = fontIsDamaged;
@@ -124,7 +121,7 @@ public class PDType1CFont extends PDSimpleFont
             
             if (mapping.isFallback())
             {
-                LOG.warn("Using fallback font " + genericFont.getName() + " for " + getBaseFont());
+                //LOG.warn("Using fallback font " + genericFont.getName() + " for " + getBaseFont());
             }
             isEmbedded = false;
         }

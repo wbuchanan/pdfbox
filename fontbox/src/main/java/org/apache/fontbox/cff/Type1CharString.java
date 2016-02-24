@@ -16,19 +16,14 @@
  */
 package org.apache.fontbox.cff;
 
-import java.awt.Point;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
+import org.apache.fontbox.encoding.StandardEncoding;
+import org.apache.fontbox.type1.Type1CharStringReader;
+
+import java.awt.*;
+import java.awt.geom.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.fontbox.encoding.StandardEncoding;
-import org.apache.fontbox.type1.Type1CharStringReader;
 
 /**
  * This class represents and renders a Type 1 CharString.
@@ -38,7 +33,6 @@ import org.apache.fontbox.type1.Type1CharStringReader;
  */
 public class Type1CharString
 {
-    private static final Log LOG = LogFactory.getLog(Type1CharString.class);
 
     private Type1CharStringReader font;
     private String fontName, glyphName;
@@ -309,7 +303,8 @@ public class Type1CharString
         else if ("return".equals(name))
         {
             // indicates an invalid charstring
-            LOG.warn("Unexpected charstring command: " + command.getKey() + " in glyph " +
+            System.out.println("Unexpected charstring command: " + command
+                    .getKey() + " in glyph " +
                     glyphName + " of font " + fontName);
         }
         else if (name != null)
@@ -320,7 +315,7 @@ public class Type1CharString
         else
         {
             // indicates an invalid charstring
-            LOG.warn("Unknown charstring command: " + command.getKey() + " in glyph " + glyphName +
+            System.out.println("Unknown charstring command: " + command.getKey() + " in glyph " + glyphName +
                      " of font " + fontName);
         }
         return null;
@@ -348,7 +343,7 @@ public class Type1CharString
 
             if (flexPoints.size() < 7)
             {
-                LOG.warn("flex without moveTo in font " + fontName + ", glyph " + glyphName +
+                System.out.println("flex without moveTo in font " + fontName + ", glyph " + glyphName +
                          ", command " + commandCount);
                 return;
             }
@@ -407,7 +402,7 @@ public class Type1CharString
         float y = (float)current.getY() + dy.floatValue();
         if (path.getCurrentPoint() == null)
         {
-            LOG.warn("rlineTo without initial moveTo in font " + fontName + ", glyph " + glyphName);
+            System.out.println("rlineTo without initial moveTo in font " + fontName + ", glyph " + glyphName);
             path.moveTo(x, y);
         }
         else
@@ -431,7 +426,7 @@ public class Type1CharString
         float y3 = y2 + dy3.floatValue();
         if (path.getCurrentPoint() == null)
         {
-            LOG.warn("rrcurveTo without initial moveTo in font " + fontName + ", glyph " + glyphName);
+            System.out.println("rrcurveTo without initial moveTo in font " + fontName + ", glyph " + glyphName);
             path.moveTo(x3, y3);
         }
         else
@@ -448,7 +443,7 @@ public class Type1CharString
     {
         if (path.getCurrentPoint() == null)
         {
-            LOG.warn("closepath without initial moveTo in font " + fontName + ", glyph " + glyphName);
+            System.out.println("closepath without initial moveTo in font " + fontName + ", glyph " + glyphName);
         }
         else
         {
@@ -476,7 +471,7 @@ public class Type1CharString
             }
             catch (IOException e)
             {
-                LOG.warn("invalid seac character in glyph " + glyphName + " of font " + fontName);
+                System.out.println("invalid seac character in glyph " + glyphName + " of font " + fontName);
             }
         }
         // accent character
@@ -493,7 +488,7 @@ public class Type1CharString
             }
             catch (IOException e)
             {
-                LOG.warn("invalid seac character in glyph " + glyphName + " of font " + fontName);
+                System.out.println("invalid seac character in glyph " + glyphName + " of font " + fontName);
             }
         }
     }

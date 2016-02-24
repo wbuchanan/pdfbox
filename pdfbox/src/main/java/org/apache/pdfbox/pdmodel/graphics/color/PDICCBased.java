@@ -18,8 +18,6 @@ package org.apache.pdfbox.pdmodel.graphics.color;
 
 import java.awt.color.ColorSpace;
 import java.util.Arrays;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSFloat;
@@ -55,7 +53,7 @@ import org.apache.pdfbox.util.Charsets;
  */
 public final class PDICCBased extends PDCIEBasedColorSpace
 {
-    private static final Log LOG = LogFactory.getLog(PDICCBased.class);
+    // private static final Log LOG = LogFactory.getLog(PDICCBased.class);
 
     private final PDStream stream;
     private int numberOfComponents = -1;
@@ -149,7 +147,7 @@ public final class PDICCBased extends PDCIEBasedColorSpace
                 // fall back to alternateColorSpace color space
                 awtColorSpace = null;
                 alternateColorSpace = getAlternateColorSpace();
-                LOG.error("Can't read embedded ICC profile (" + e.getLocalizedMessage() + "), using alternate color space: " + alternateColorSpace.getName());
+                System.out.println(e.toString());
                 initialColor = alternateColorSpace.getInitialColor();
             }
             else

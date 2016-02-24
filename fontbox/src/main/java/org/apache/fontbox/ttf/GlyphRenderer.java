@@ -16,9 +16,6 @@
  */
 package org.apache.fontbox.ttf;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +35,10 @@ import java.util.List;
  */
 class GlyphRenderer
 {
-    private static final Log LOG = LogFactory.getLog(GlyphRenderer.class);
 
     private GlyphDescription glyphDescription;
+
+    private Boolean debugEnabled = false;
 
     GlyphRenderer(GlyphDescription glyphDescription)
     {
@@ -143,27 +141,27 @@ class GlyphRenderer
     private void moveTo(GeneralPath path, Point point)
     {
         path.moveTo(point.x, point.y);
-        if (LOG.isDebugEnabled())
+        if (this.debugEnabled)
         {
-            LOG.trace("moveTo: " + String.format("%d,%d", point.x, point.y));
+            System.out.println("moveTo: " + String.format("%d,%d", point.x, point.y));
         }
     }
 
     private void lineTo(GeneralPath path, Point point)
     {
         path.lineTo(point.x, point.y);
-        if (LOG.isDebugEnabled())
+        if (this.debugEnabled)
         {
-            LOG.trace("lineTo: " + String.format("%d,%d", point.x, point.y));
+            System.out.println("lineTo: " + String.format("%d,%d", point.x, point.y));
         }
     }
 
     private void quadTo(GeneralPath path, Point ctrlPoint, Point point)
     {
         path.quadTo(ctrlPoint.x, ctrlPoint.y, point.x, point.y);
-        if (LOG.isDebugEnabled())
+        if (this.debugEnabled)
         {
-            LOG.trace("quadTo: " + String.format("%d,%d %d,%d", ctrlPoint.x, ctrlPoint.y,
+            System.out.println("quadTo: " + String.format("%d,%d %d,%d", ctrlPoint.x, ctrlPoint.y,
                     point.x, point.y));
         }
     }

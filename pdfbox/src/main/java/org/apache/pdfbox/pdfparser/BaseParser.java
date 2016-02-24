@@ -16,25 +16,12 @@
  */
 package org.apache.pdfbox.pdfparser;
 
+import org.apache.pdfbox.cos.*;
+import org.apache.pdfbox.util.Charsets;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.pdfbox.cos.COSArray;
-import org.apache.pdfbox.cos.COSBase;
-import org.apache.pdfbox.cos.COSBoolean;
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSDocument;
-import org.apache.pdfbox.cos.COSInteger;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.cos.COSNull;
-import org.apache.pdfbox.cos.COSNumber;
-import org.apache.pdfbox.cos.COSObject;
-import org.apache.pdfbox.cos.COSObjectKey;
-import org.apache.pdfbox.cos.COSString;
-import org.apache.pdfbox.util.Charsets;
-
 
 import static org.apache.pdfbox.util.Charsets.ISO_8859_1;
 
@@ -55,7 +42,7 @@ public abstract class BaseParser
     /**
      * Log instance.
      */
-    private static final Log LOG = LogFactory.getLog(BaseParser.class);
+    // private static final Log LOG = LogFactory.getLog(BaseParser.class);
 
     protected static final int E = 'e';
     protected static final int N = 'n';
@@ -209,7 +196,7 @@ public abstract class BaseParser
             else
             {
                 // invalid dictionary, we were expecting a /Name, read until the end or until we can recover
-                LOG.warn("Invalid dictionary, found: '" + c + "' but expected: '/' at offset " + seqSource.getPosition());
+                //LOG.warn("Invalid dictionary, found: '" + c + "' but expected: '/' at offset " + seqSource.getPosition());
                 if (readUntilEndOfCOSDictionary())
                 {
                     // we couldn't recover
@@ -290,7 +277,7 @@ public abstract class BaseParser
 
         if (value == null)
         {
-            LOG.warn("Bad Dictionary Declaration " + seqSource);
+            //LOG.warn("Bad Dictionary Declaration " + seqSource);
         }
         else
         {
@@ -679,7 +666,7 @@ public abstract class BaseParser
             else
             {
                 //it could be a bad object in the array which is just skipped
-                LOG.warn("Corrupt object reference at offset " + seqSource.getPosition());
+                //LOG.warn("Corrupt object reference at offset " + seqSource.getPosition());
 
                 // This could also be an "endobj" or "endstream" which means we can assume that
                 // the array has ended.

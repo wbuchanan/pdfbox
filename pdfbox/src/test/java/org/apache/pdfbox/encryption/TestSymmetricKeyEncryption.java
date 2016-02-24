@@ -16,21 +16,7 @@
  */
 package org.apache.pdfbox.encryption;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import javax.crypto.Cipher;
 import junit.framework.TestCase;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
@@ -43,6 +29,13 @@ import org.apache.pdfbox.pdmodel.encryption.StandardProtectionPolicy;
 import org.apache.pdfbox.pdmodel.graphics.image.ValidateXImage;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.junit.Assert;
+
+import javax.crypto.*;
+import java.awt.image.*;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Tests for symmetric key encryption.
@@ -58,10 +51,6 @@ import org.junit.Assert;
  */
 public class TestSymmetricKeyEncryption extends TestCase
 {
-    /**
-     * Logger instance.
-     */
-    private static final Log LOG = LogFactory.getLog(TestSymmetricKeyEncryption.class);
 
     private final File testResultsDir = new File("target/test-output/crypto");
 
@@ -330,7 +319,6 @@ public class TestSymmetricKeyEncryption extends TestCase
         Map<String, PDComplexFileSpecification> embeddedFileNames = embeddedFiles.getNames();
         Assert.assertEquals(1, embeddedFileNames.size());
         Map.Entry<String, PDComplexFileSpecification> entry = embeddedFileNames.entrySet().iterator().next();
-        LOG.info("Processing embedded file " + entry.getKey() + ":");
         PDComplexFileSpecification complexFileSpec = entry.getValue();
         PDEmbeddedFile embeddedFile = complexFileSpec.getEmbeddedFile();
 
@@ -341,7 +329,6 @@ public class TestSymmetricKeyEncryption extends TestCase
         fos.close();
         is.close();
 
-        LOG.info("  size: " + embeddedFile.getSize());
         assertEquals(embeddedFile.getSize(), resultFile.length());
 
         return resultFile;

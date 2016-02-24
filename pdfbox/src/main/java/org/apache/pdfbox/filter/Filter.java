@@ -16,20 +16,16 @@
  */
 package org.apache.pdfbox.filter;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Iterator;
-
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
+
+import javax.imageio.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Iterator;
 
 /**
  * A filter for stream data.
@@ -39,7 +35,6 @@ import org.apache.pdfbox.cos.COSName;
  */
 public abstract class Filter
 {
-    private static final Log LOG = LogFactory.getLog(Filter.class);
 
     /**
      * Constructor.
@@ -97,7 +92,7 @@ public abstract class Filter
         }
         else if (obj != null)
         {
-            LOG.error("Expected DecodeParams to be an Array or Dictionary but found " +
+            System.out.println("Expected DecodeParams to be an Array or Dictionary but found " +
                       obj.getClass().getName());
         }
         return new COSDictionary();

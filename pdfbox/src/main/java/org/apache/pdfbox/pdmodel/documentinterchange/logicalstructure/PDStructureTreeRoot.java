@@ -19,8 +19,6 @@ package org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
@@ -43,7 +41,7 @@ public class PDStructureTreeRoot extends PDStructureNode
     /**
      * Log instance.
      */
-    private static final Log LOG = LogFactory.getLog(PDStructureTreeRoot.class);
+    // private static final Log LOG = LogFactory.getLog(PDStructureTreeRoot.class);
 
     private static final String TYPE = "StructTreeRoot";
 
@@ -199,7 +197,7 @@ public class PDStructureTreeRoot extends PDStructureNode
             }
             catch (IOException e)
             {
-                LOG.error(e,e);
+                System.out.println(e.toString());
             }
         }
         return new Hashtable<String, Object>();

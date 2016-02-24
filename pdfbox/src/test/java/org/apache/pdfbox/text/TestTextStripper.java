@@ -16,39 +16,20 @@
  */
 package org.apache.pdfbox.text;
 
-import difflib.ChangeDelta;
-import difflib.DeleteDelta;
-import difflib.DiffUtils;
-import difflib.InsertDelta;
-import difflib.Patch;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilenameFilter;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
-import java.io.Writer;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-
+import difflib.*;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.TestPDPageTree;
 import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination;
 import org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutline;
 import org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem;
+
+import java.io.*;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 
 /**
@@ -102,7 +83,7 @@ public class TestTextStripper extends TestCase
     /**
      * Logger instance.
      */
-    private static final Log log = LogFactory.getLog(TestTextStripper.class);
+    // private static final Log log = LogFactory.getLog(TestTextStripper.class);
 
     private boolean bFail = false;
     private PDFTextStripper stripper = null;
@@ -163,9 +144,11 @@ public class TestTextStripper extends TestCase
                 if( expectedArray[expectedIndex] != actualArray[actualIndex] )
                 {
                     equals = false;
+                    /*
                     log.warn("Lines differ at index"
                      + " expected:" + expectedIndex + "-" + (int)expectedArray[expectedIndex]
                      + " actual:" + actualIndex + "-" + (int)actualArray[actualIndex] );
+                    */
                     break;
                 }
                 expectedIndex = skipWhitespace( expectedArray, expectedIndex );
@@ -178,12 +161,12 @@ public class TestTextStripper extends TestCase
                 if( expectedIndex != expectedArray.length )
                 {
                     equals = false;
-                    log.warn("Expected line is longer at:" + expectedIndex );
+                    //log.warn("Expected line is longer at:" + expectedIndex );
                 }
                 if( actualIndex != actualArray.length )
                 {
                     equals = false;
-                    log.warn("Actual line is longer at:" + actualIndex );
+                    //log.warn("Actual line is longer at:" + actualIndex );
                 }
             }
         }
@@ -228,11 +211,11 @@ public class TestTextStripper extends TestCase
     {
         if(bSort)
         {
-            log.info("Preparing to parse " + inFile.getName() + " for sorted test");
+            //log.info("Preparing to parse " + inFile.getName() + " for sorted test");
         }
         else
         {
-            log.info("Preparing to parse " + inFile.getName() + " for standard test");
+            //log.info("Preparing to parse " + inFile.getName() + " for standard test");
         }
 
         if (!outDir.exists()) 
@@ -294,14 +277,14 @@ public class TestTextStripper extends TestCase
 
             if (bLogResult)
             {
-                log.info("Text for " + inFile.getName() + ":");
-                log.info(stripper.getText(document));
+                //log.info("Text for " + inFile.getName() + ":");
+                //log.info(stripper.getText(document));
             }
 
             if (!expectedFile.exists())
             {
                 this.bFail = true;
-                log.error("FAILURE: Input verification file: " + expectedFile.getAbsolutePath() +
+                System.out.println("FAILURE: Input verification file: " + expectedFile.getAbsolutePath() +
                         " did not exist");
                 return;
             }
@@ -329,7 +312,7 @@ public class TestTextStripper extends TestCase
                 {
                     this.bFail = true;
                     localFail = true;
-                    log.error("FAILURE: Line mismatch for file " + inFile.getName() +
+                    System.out.println("FAILURE: Line mismatch for file " + inFile.getName() +
                             " (sort = "+bSort+")" +
                             " at expected line: " + expectedReader.getLineNumber() +
                             " at actual line: " + actualReader.getLineNumber() +

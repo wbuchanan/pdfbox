@@ -17,8 +17,6 @@
 package org.apache.pdfbox.text;
 
 import java.io.InputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.contentstream.PDFStreamEngine;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.font.encoding.GlyphList;
@@ -71,7 +69,7 @@ import org.apache.pdfbox.pdmodel.font.PDFontDescriptor;
  */
 class PDFTextStreamEngine extends PDFStreamEngine
 {
-    private static final Log LOG = LogFactory.getLog(PDFTextStreamEngine.class);
+    // private static final Log LOG = LogFactory.getLog(PDFTextStreamEngine.class);
 
     private int pageRotation;
     private PDRectangle pageSize;
@@ -252,7 +250,7 @@ class PDFTextStreamEngine extends PDFStreamEngine
         }
         catch (Throwable exception)
         {
-            LOG.warn(exception, exception);
+            //LOG.warn(exception, exception);
         }
 
         if (spaceWidthText == 0)

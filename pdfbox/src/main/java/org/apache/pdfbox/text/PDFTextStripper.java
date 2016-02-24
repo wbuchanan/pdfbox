@@ -16,30 +16,6 @@
  */
 package org.apache.pdfbox.text;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.text.Bidi;
-import java.text.Normalizer;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-import java.util.TreeSet;
-import java.util.regex.Pattern;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageTree;
@@ -47,6 +23,12 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem;
 import org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDThreadBead;
 import org.apache.pdfbox.util.QuickSort;
+
+import java.io.*;
+import java.text.Bidi;
+import java.text.Normalizer;
+import java.util.*;
+import java.util.regex.Pattern;
 
 /**
  * This class will take a pdf document and strip out all of the text and ignore the formatting and such. Please note; it
@@ -64,7 +46,7 @@ public class PDFTextStripper extends PDFTextStreamEngine
     private static float defaultDropThreshold = 2.5f;
     private static final boolean useCustomQuickSort;
 
-    private static final Log LOG = LogFactory.getLog(PDFTextStripper.class);
+    // private static final Log LOG = LogFactory.getLog(PDFTextStripper.class);
 
     // enable the ability to set the default indent/drop thresholds
     // with -D system properties:
@@ -1856,8 +1838,9 @@ public class PDFTextStripper extends PDFTextStreamEngine
         }
         catch (IOException e)
         {
-            LOG.warn("Could not parse BidiMirroring.txt, mirroring char map will be empty: "
-                    + e.getMessage());
+            //LOG.warn("Could not parse BidiMirroring.txt, mirroring char map
+            // will be empty: "
+            //        + e.getMessage());
         }
         finally
         {
@@ -1867,7 +1850,7 @@ public class PDFTextStripper extends PDFTextStreamEngine
             }
             catch (IOException e)
             {
-                LOG.error("Could not close BidiMirroring.txt ", e);
+                System.out.println(e.toString());
             }
         }
     };
@@ -1919,7 +1902,7 @@ public class PDFTextStripper extends PDFTextStreamEngine
     }
 
     /**
-     * Used within {@link #normalize(List, boolean, boolean)} to create a single {@link WordWithTextPositions} entry.
+     * Used within {link #normalize(List, boolean, boolean)} to create a single {@link WordWithTextPositions} entry.
      */
     private WordWithTextPositions createWord(String word, List<TextPosition> wordPositions)
     {
@@ -1983,7 +1966,7 @@ public class PDFTextStripper extends PDFTextStreamEngine
     }
 
     /**
-     * Used within {@link #normalize(List, boolean, boolean)} to handle a {@link TextPosition}.
+     * Used within {link #normalize(List, boolean, boolean)} to handle a {@link TextPosition}.
      * 
      * @return The StringBuilder that must be used when calling this method.
      */

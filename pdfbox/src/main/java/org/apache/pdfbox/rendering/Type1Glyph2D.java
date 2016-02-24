@@ -20,8 +20,6 @@ import java.awt.geom.GeneralPath;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.font.PDSimpleFont;
 
 /**
@@ -29,7 +27,7 @@ import org.apache.pdfbox.pdmodel.font.PDSimpleFont;
  */
 final class Type1Glyph2D implements Glyph2D
 {
-    private static final Log LOG = LogFactory.getLog(Type1Glyph2D.class);
+    // private static final Log LOG = LogFactory.getLog(Type1Glyph2D.class);
 
     private final Map<Integer, GeneralPath> cache = new HashMap<Integer, GeneralPath>();
     private final PDSimpleFont font;
@@ -57,7 +55,7 @@ final class Type1Glyph2D implements Glyph2D
                 String name = font.getEncoding().getName(code);
                 if (!font.hasGlyph(name))
                 {
-                    LOG.warn("No glyph for " + code + " (" + name + ") in font " + font.getName());
+                    //LOG.warn("No glyph for " + code + " (" + name + ") in font " + font.getName());
                 }
     
                 // todo: can this happen? should it be encapsulated?
@@ -73,7 +71,7 @@ final class Type1Glyph2D implements Glyph2D
             catch (IOException e)
             {
                 // todo: escalate this error?
-                LOG.error("Glyph rendering failed", e); 
+                System.out.println(e.toString());
                 path = new GeneralPath();
             }
         }

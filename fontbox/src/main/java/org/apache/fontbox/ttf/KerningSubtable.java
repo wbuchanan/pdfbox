@@ -20,8 +20,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * A 'kern' table in a true type font.
@@ -30,7 +28,6 @@ import org.apache.commons.logging.LogFactory;
  */
 public class KerningSubtable
 {
-    private static final Log LOG = LogFactory.getLog(KerningSubtable.class);
 
     // coverage field bit masks and values
     private static final int COVERAGE_HORIZONTAL = 0x0001;
@@ -156,7 +153,7 @@ public class KerningSubtable
         }
         else
         {
-            LOG.warn("No kerning subtable data available due to an unsupported kerning subtable version");
+            System.out.println("No kerning subtable data available due to an unsupported kerning subtable version");
         }
         return kerning;
     }
@@ -172,7 +169,7 @@ public class KerningSubtable
     {
         if (pairs == null)
         {
-            LOG.warn("No kerning subtable data available due to an unsupported kerning subtable version");
+            System.out.println("No kerning subtable data available due to an unsupported kerning subtable version");
             return 0;
         }
         return pairs.getKerning(l, r);
@@ -216,7 +213,7 @@ public class KerningSubtable
         }
         else
         {
-            LOG.debug("Skipped kerning subtable due to an unsupported kerning subtable version: " + format);
+            System.out.println("Skipped kerning subtable due to an unsupported kerning subtable version: " + format);
         }
     }
 

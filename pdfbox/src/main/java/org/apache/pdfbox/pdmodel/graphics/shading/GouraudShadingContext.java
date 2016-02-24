@@ -27,8 +27,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.imageio.stream.ImageInputStream;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.pdfbox.pdmodel.common.PDRange;
 import org.apache.pdfbox.util.Matrix;
 
@@ -40,7 +38,7 @@ import org.apache.pdfbox.util.Matrix;
  */
 abstract class GouraudShadingContext extends TriangleBasedShadingContext
 {
-    private static final Log LOG = LogFactory.getLog(GouraudShadingContext.class);
+    // private static final Log LOG = LogFactory.getLog(GouraudShadingContext.class);
 
     /**
      * triangle list.
@@ -84,7 +82,7 @@ abstract class GouraudShadingContext extends TriangleBasedShadingContext
         long y = input.readBits(bitsPerCoordinate);
         float dstX = interpolate(x, maxSrcCoord, rangeX.getMin(), rangeX.getMax());
         float dstY = interpolate(y, maxSrcCoord, rangeY.getMin(), rangeY.getMax());
-        LOG.debug("coord: " + String.format("[%06X,%06X] -> [%f,%f]", x, y, dstX, dstY));
+        //LOG.debug("coord: " + String.format("[%06X,%06X] -> [%f,%f]", x, y, dstX, dstY));
         Point2D p = matrix.transformPoint(dstX, dstY);
         xform.transform(p, p);
 
@@ -93,8 +91,8 @@ abstract class GouraudShadingContext extends TriangleBasedShadingContext
             int color = (int) input.readBits(bitsPerColorComponent);
             colorComponentTab[n] = interpolate(color, maxSrcColor, colRangeTab[n].getMin(),
                     colRangeTab[n].getMax());
-            LOG.debug("color[" + n + "]: " + color + "/" + String.format("%02x", color)
-                    + "-> color[" + n + "]: " + colorComponentTab[n]);
+            // LOG.debug("color[" + n + "]: " + color + "/" + String.format("%02x", color)
+ //                     + "-> color[" + n + "]: " + colorComponentTab[n]);
         }
         return new Vertex(p, colorComponentTab);
     }
