@@ -2,164 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4853f51e-dbf9-4ee3-bcd0-2933d28e6669" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/billy.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_jpeg2000_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_java_diff_utils_diffutils_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_levigo_jbig2_levigo_jbig2_imageio_1_6_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wink_wink_component_test_support_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk15on_1_54.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_54.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_54.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfbox-app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debugger-app/debugger-app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debugger/pdfbox-debugger.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pdfbox-examples.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fontbox/fontbox.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parent/pdfbox-parent.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdfbox-reactor.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdfbox/pdfbox.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preflight-app/preflight-app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preflight/preflight.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/pdfbox-tools.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmpbox/xmpbox.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/pdfbox/examples/signature/TSAClient.java" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/pdfbox/examples/signature/TSAClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/pom.xml" afterPath="$PROJECT_DIR$/fontbox/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharString.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharStringParser.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/cff/Type1CharStringParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/CmapSubtable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/CmapSubtable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfCompositeDescript.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfCompositeDescript.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfSimpleDescript.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyfSimpleDescript.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyphRenderer.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/GlyphRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningSubtable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningSubtable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningTable.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/ttf/KerningTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/type1/Type1Lexer.java" afterPath="$PROJECT_DIR$/fontbox/src/main/java/org/apache/fontbox/type1/Type1Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parent/pom.xml" afterPath="$PROJECT_DIR$/parent/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/pom.xml" afterPath="$PROJECT_DIR$/pdfbox/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClosePath.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClosePath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveTo.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveTo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LineTo.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LineTo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineDashPattern.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineDashPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveText.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSStream.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSString.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/cos/COSString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/ASCIIHexFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/ASCIIHexFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/DCTFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/DCTFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/Filter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/Filter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/FlateFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/FlateFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/LZWFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/LZWFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/RunLengthDecodeFilter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/filter/RunLengthDecodeFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/io/ScratchFileBuffer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/COSParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/StandardStructureTypes.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/StandardStructureTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingPaint.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingPaint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/CIDType0Glyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/CIDType0Glyph2D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/PageDrawer.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/PageDrawer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/TTFGlyph2D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/Type1Glyph2D.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/rendering/Type1Glyph2D.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStreamEngine.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStreamEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java" afterPath="$PROJECT_DIR$/pdfbox/src/main/java/org/apache/pdfbox/text/TextPosition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/encryption/TestSymmetricKeyEncryption.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/encryption/TestSymmetricKeyEncryption.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/rendering/TestPDFToImage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/BidiTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java" afterPath="$PROJECT_DIR$/pdfbox/src/test/java/org/apache/pdfbox/text/TestTextStripper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/pom.xml" afterPath="$PROJECT_DIR$/preflight/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/process/reflect/SinglePageValidationProcess.java" afterPath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/process/reflect/SinglePageValidationProcess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/utils/COSUtils.java" afterPath="$PROJECT_DIR$/preflight/src/main/java/org/apache/pdfbox/preflight/utils/COSUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/AbstractInvalidFileTester.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/AbstractInvalidFileTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestInvalidFiles.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestInvalidFiles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestIsartorValidation.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestIsartorValidation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestValidFiles.java" afterPath="$PROJECT_DIR$/preflight/src/test/java/org/apache/pdfbox/preflight/integration/TestValidFiles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/pom.xml" afterPath="$PROJECT_DIR$/tools/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/OverlayPDF.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/OverlayPDF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/ImageIOUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/ImageIOUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/MetaUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/MetaUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/TIFFUtil.java" afterPath="$PROJECT_DIR$/tools/src/main/java/org/apache/pdfbox/tools/imageio/TIFFUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/org/apache/pdfbox/tools/imageio/TestImageIOUtils.java" afterPath="$PROJECT_DIR$/tools/src/test/java/org/apache/pdfbox/tools/imageio/TestImageIOUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmpbox/pom.xml" afterPath="$PROJECT_DIR$/xmpbox/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pdfbox-reactor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -510,7 +353,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="137" y="204" width="1649" height="620" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -535,7 +378,7 @@
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.49668324" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.49668324" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495333" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
